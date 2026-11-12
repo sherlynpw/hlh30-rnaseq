@@ -1,0 +1,81 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "C. elegans Pipeline Samplesheet Schema",
+    "description": "Schema for validating the pipeline input samplesheet",
+    "type": "object",
+    "properties": {
+        "samples": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "sample_id": {
+                        "type": "string",
+                        "description": "Unique sample identifier",
+                        "pattern": "^[a-zA-Z0-9_\\-]+$"
+                    },
+                    "input_type": {
+                        "type": "string",
+                        "description": "Processing path for this sample",
+                        "enum": ["plasmidsaurus_bam", "fastq_3prime", "fastq_standard"]
+                    },
+                    "bam": {
+                        "type": "string",
+                        "description": "Path to UMI-deduplicated BAM file (for plasmidsaurus_bam input_type)"
+                    },
+                    "fastq_1": {
+                        "type": "string",
+                        "description": "Path to read 1 FASTQ file (for fastq_* input_types)"
+                    },
+                    "fastq_2": {
+                        "type": "string",
+                        "description": "Path to read 2 FASTQ file (for fastq_standard input_type, paired-end)"
+                    },
+                    "genotype": {
+                        "type": "string",
+                        "description": "Sample genotype (e.g., N2, hlh-30)"
+                    },
+                    "timepoint": {
+                        "type": "string",
+                        "description": "Sample timepoint (e.g., L4, Day3)"
+                    },
+                    "source": {
+                        "type": "string",
+                        "description": "Data source for batch tracking (e.g., plasmidsaurus, sra_GSE123456)"
+                    },
+                    "strandedness": {
+                        "type": "string",
+                        "description": "Library strandedness",
+                        "enum": ["forward", "reverse", "unstranded", "auto"],
+                        "default": "auto"
+                    },
+                    "replicate": {
+                        "type": ["string", "integer"],
+                        "description": "Biological replicate number"
+                    }
+                },
+                "required": ["sample_id", "input_type", "genotype", "timepoint"],
+                "allOf": [
+                    {
+                        "if": {
+                            "properties": { "input_type": { "const": "plasmidsaurus_bam" } }
+                        },
+                        "then": {
+                            "required": ["bam"]
+                        }
+                    },
+                    {
+                        "if": {
+                            "properties": { "input_type": { "enum": ["fastq_3prime", "fastq_standard"] } }
+                        },
+                        "then": {
+                            "required": ["fastq_1"]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "required": ["samples"]
+}

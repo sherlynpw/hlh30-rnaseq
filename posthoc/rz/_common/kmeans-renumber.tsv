@@ -1,0 +1,20 @@
+# Pipeline k-means number -> paper number, per run (see renumber-clusters.R).
+# Made 2026-10-12 by matching the forward-stranded re-run to the first
+# (unstranded) run by gene overlap. Jaccard of each match in the last column.
+run	pipeline	paper	jaccard
+VZRJXQ-ruv-rbe	4	1	0.49
+VZRJXQ-ruv-rbe	3	2	0.88
+VZRJXQ-ruv-rbe	1	3	0.81
+VZRJXQ-ruv-rbe	6	4	0.82
+VZRJXQ-ruv-rbe	2	5	0.79
+VZRJXQ-ruv-rbe	5	6	0.79
+VZRJXQ_no_l4-ruv-rbe	2	1	0.87
+VZRJXQ_no_l4-ruv-rbe	1	2	0.86
+VZRJXQ_no_l4-ruv-rbe	3	3	0.89
+VZRJXQ_no_l4-ruv-rbe	4	4	0.91
+hlh30-all-ruv	6	1	0.88
+hlh30-all-ruv	4	2	0.84
+hlh30-all-ruv	3	3	0.94
+hlh30-all-ruv	5	4	0.89
+hlh30-all-ruv	2	5	0.89
+hlh30-all-ruv	1	6	0.93

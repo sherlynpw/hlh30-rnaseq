@@ -1,0 +1,186 @@
+gene_id	gene_name	source_gene	direction	group	kegg_category	map_method
+WBGene00022089	Y69A2AR.18	Y69A2AR.18	down	B	oxidative phosphorylation	gene_name
+WBGene00009712	ndub-2	F44G4.2	down	B	oxidative phosphorylation	sequence_name
+WBGene00009161	cox-7C	F26E4.6	down	B	oxidative phosphorylation	sequence_name
+WBGene00000869	cyc-1	cyc-1	down	B	oxidative phosphorylation	gene_name
+WBGene00000207	asb-2	asb-2	down	B	oxidative phosphorylation	gene_name
+WBGene00019007	ucr-11	F57B10.14	down	B	oxidative phosphorylation	sequence_name
+WBGene00020417	nuo-2	nuo-2	down	B	oxidative phosphorylation	gene_name
+WBGene00022170	cox-6B	Y71H2AM.5	down	B	oxidative phosphorylation	sequence_name
+WBGene00006911	vha-2	vha-2	down	B	oxidative phosphorylation	gene_name
+WBGene00017926	cox-6C	F29C4.2	down	B	oxidative phosphorylation	sequence_name
+WBGene00020517	hpo-8	hpo-8	down	B	fatty acid elongation	gene_name
+WBGene00015141	ugt-46	ugt-46	down	B	drug metabolism	gene_name
+WBGene00020682	T22D1.3	T22D1.3	down	B	drug metabolism	gene_name
+WBGene00019240	adh-5	H24K24.3	down	B	carbon metabolism	sequence_name
+WBGene00001503	fum-1	fum-1	down	B	carbon metabolism	gene_name
+WBGene00021286	tald-1	Y24D9A.8	down	B	amino acid biosynthesis	sequence_name
+WBGene00015778	got-2.2	got-2.2	down	B	amino acid biosynthesis	gene_name
+WBGene00019867	R04B3.2	R04B3.2	down	B	lysosome	gene_name
+WBGene00001814	haf-4	haf-4	down	B	ABC transporters	gene_name
+WBGene00009294	ndua-1	F31D4.9	down	B	oxidative phosphorylation	sequence_name
+WBGene00000210	asg-2	asg-2	down	B	oxidative phosphorylation	gene_name
+WBGene00007122	B0250.5	B0250.5	down	B	Val,Leu,Ile degradation (BCAA catabolism)	gene_name
+WBGene00001790	gst-42	gst-42	down	B	Tyr metabolism	gene_name
+WBGene00016201	tdo-2	tdo-2	down	B	Trp metabolism	gene_name
+WBGene00020679	ogdh-1	ogdh-1	down	B	Trp metabolism	gene_name
+WBGene00022852	ZK1127.5	ZK1127.5	down	B	ribosome biogenesis	gene_name
+WBGene00012911	acl-7	acl-7	down	B	peroxisome	gene_name
+WBGene00011850	T20B3.1	T20B3.1	down	B	peroxisome	gene_name
+WBGene00015810	C16A3.5	C16A3.5	down	B	oxidative phosphorylation	gene_name
+WBGene00016034	C24A3.4	C24A3.4	down	B	peroxisome	gene_name
+WBGene00012553	cox-5A	cco-2	down	B	oxidative phosphorylation	other_names
+WBGene00012895	cox-10	cox-10	down	B	oxidative phosphorylation	gene_name
+WBGene00000230	atp-3	atp-3	down	B	oxidative phosphorylation	gene_name
+WBGene00001520	gas-1	gas-1	down	B	oxidative phosphorylation	gene_name
+WBGene00021800	nduf-9	Y53G8AL.2	down	B	oxidative phosphorylation	sequence_name
+WBGene00018361	ndub-11	F42G8.10	down	B	oxidative phosphorylation	sequence_name
+WBGene00021839	nduf-5	nduf-5	down	B	oxidative phosphorylation	gene_name
+WBGene00013094	ndub-8	Y51H1A.3	down	B	oxidative phosphorylation	sequence_name
+WBGene00001794	gta-1	gta-1	down	C	Val,Leu,Ile degradation (BCAA catabolism)	gene_name
+WBGene00015509	C06A6.4	C06A6.4	down	C	amino acid biosynthesis	gene_name
+WBGene00000240	pah-1	pah-1	down	C	Phe metabolism	gene_name
+WBGene00009739	F45H10.2	F45H10.2	down	C	oxidative phosphorylation	gene_name
+WBGene00022169	nduc-2	Y71H2AM.4	down	C	oxidative phosphorylation	sequence_name
+WBGene00007880	ndua-5	C33A12.1	down	C	oxidative phosphorylation	sequence_name
+WBGene00007904	C33G3.4	C33G3.4	down	C	lysosome	gene_name
+WBGene00012007	T25B9.1	T25B9.1	down	C	Gly,Ser,Thr metabolism	gene_name
+WBGene00015783	C15B12.1	C15B12.1	down	C	Gly,Ser,Thr metabolism	gene_name
+WBGene00021355	Y37E3.17	Y37E3.17	down	C	Gly,Ser,Thr metabolism	gene_name
+WBGene00019061	F58F12.1	F58F12.1	down	C	oxidative phosphorylation	gene_name
+WBGene00000107	alh-1	alh-1	down	C	fatty acid degradation	gene_name
+WBGene00022104	acsd-1	Y71D11A.3	down	C	Trp metabolism	sequence_name
+WBGene00010083	xdh-1	F55B11.1	down	C	drug metabolism	sequence_name
+WBGene00000391	cdd-1	cdd-1	down	C	drug metabolism	gene_name
+WBGene00010794	dld-1	dld-1	down	C	carbon metabolism	gene_name
+WBGene00017765	gcst-1	gcst-1	down	C	carbon metabolism	gene_name
+WBGene00020962	W02H5.8	W02H5.8	down	C	carbon metabolism	gene_name
+WBGene00009126	pyk-1	pyk-1	down	C	amino acid biosynthesis	gene_name
+WBGene00010052	F54D5.7	F54D5.7	down	C	fatty acid degradation	gene_name
+WBGene00000371	cox-5B	cco-1	down	C	oxidative phosphorylation	other_names
+WBGene00010336	acox-1.6	F59F4.1	down	C	fatty acid degradation	sequence_name
+WBGene00015755	C14B9.10	C14B9.10	down	C	oxidative phosphorylation	gene_name
+WBGene00006519	cox-6A	tag-174	down	C	oxidative phosphorylation	other_names
+WBGene00003053	lmp-1	lmp-1	down	C	lysosome	gene_name
+WBGene00000802	crt-1	crt-1	down	C	phagosome	gene_name
+WBGene00017574	pxmp-4	F18F11.1	down	C	peroxisome	sequence_name
+WBGene00000081	ads-1	ads-1	down	C	peroxisome	gene_name
+WBGene00007175	B0395.3	B0395.3	down	C	peroxisome	gene_name
+WBGene00014086	ndub-6	ZK809.3	down	C	oxidative phosphorylation	sequence_name
+WBGene00009740	ndua-7	F45H10.3	down	C	oxidative phosphorylation	sequence_name
+WBGene00000976	dhs-13	dhs-13	down	C	peroxisome	gene_name
+WBGene00002162	isp-1	isp-1	down	C	oxidative phosphorylation	gene_name
+WBGene00012354	cox-4	W09C5.8	down	C	oxidative phosphorylation	sequence_name
+WBGene00021562	nuo-5	nuo-5	down	C	oxidative phosphorylation	gene_name
+WBGene00022336	Y82E9BR.3	Y82E9BR.3	down	C	oxidative phosphorylation	gene_name
+WBGene00003831	nuo-1	nuo-1	down	C	oxidative phosphorylation	gene_name
+WBGene00013308	nuo-3	nuo-3	down	C	oxidative phosphorylation	gene_name
+WBGene00011273	R53.4	R53.4	down	C	oxidative phosphorylation	gene_name
+WBGene00008414	ndub-7	D2030.4	down	C	oxidative phosphorylation	sequence_name
+WBGene00003834	nxf-1	nxf-1	up	D	ribosome biogenesis	gene_name
+WBGene00013688	riok-2	riok-2	up	D	ribosome biogenesis	gene_name
+WBGene00021843	nobh-1	Y54E10BR.4	up	D	ribosome biogenesis	sequence_name
+WBGene00019698	riok-1	riok-1	up	D	ribosome biogenesis	gene_name
+WBGene00010408	mboa-2	mboa-2	up	D	retinol metabolism	gene_name
+WBGene00000567	cnx-1	cnx-1	up	D	phagosome	gene_name
+WBGene00004271	rab-7	rab-7	up	D	phagosome	gene_name
+WBGene00008127	ddo-1	ddo-1	up	D	peroxisome	gene_name
+WBGene00015462	C05C8.5	C05C8.5	up	D	ribosome biogenesis	gene_name
+WBGene00004192	prx-2	prx-2	up	D	peroxisome	gene_name
+WBGene00003234	mif-1	mif-1	up	D	Phe metabolism	gene_name
+WBGene00009266	F30A10.9	F30A10.9	up	D	ribosome biogenesis	gene_name
+WBGene00022798	fahd-1	fahd-1	up	D	Tyr metabolism	gene_name
+WBGene00012030	T25G3.3	T25G3.3	up	D	ribosome biogenesis	gene_name
+WBGene00002078	xpo-1	xpo-1	up	D	ribosome biogenesis	gene_name
+WBGene00020297	nog-1	T07A9.9	up	D	ribosome biogenesis	sequence_name
+WBGene00002191	kin-3	kin-3	up	D	ribosome biogenesis	gene_name
+WBGene00002196	kin-10	kin-10	up	D	ribosome biogenesis	gene_name
+WBGene00011089	kmo-1	kmo-1	up	D	Trp metabolism	gene_name
+WBGene00017051	afmd-1	afmd-1	up	D	glyoxylate metabolism	gene_name
+WBGene00019620	fah-1	fah-1	up	D	Tyr metabolism	gene_name
+WBGene00001843	hgo-1	hgo-1	up	D	Tyr metabolism	gene_name
+WBGene00001398	fat-6	fat-6	up	D	unsaturated fatty acid biosynthesis	gene_name
+WBGene00007143	hacl-1	B0334.3	up	D	peroxisome	sequence_name
+WBGene00003821	nst-1	nst-1	up	D	ribosome biogenesis	gene_name
+WBGene00009335	F32D8.13	F32D8.13	up	D	peroxisome	gene_name
+WBGene00009484	F36G3.3	F36G3.3	up	D	lysosome	gene_name
+WBGene00011826	T18D3.9	T18D3.9	up	D	peroxisome	gene_name
+WBGene00004194	prx-5	prx-5	up	D	peroxisome	gene_name
+WBGene00017272	F08F8.7	F08F8.7	up	D	amino acid biosynthesis	gene_name
+WBGene00015101	rpia-1	rpia-1	up	D	amino acid biosynthesis	gene_name
+WBGene00014095	gdh-1	gdh-1	up	D	carbon metabolism	gene_name
+WBGene00015733	C13B9.2	C13B9.2	up	D	carbon metabolism	gene_name
+WBGene00000114	alh-8	alh-8	up	D	carbon metabolism	gene_name
+WBGene00017166	aldo-2	aldo-2	up	D	amino acid biosynthesis	gene_name
+WBGene00008230	pfk-1.2	pfk-1.2	up	D	carbon metabolism	gene_name
+WBGene00017440	upb-1	upb-1	up	D	drug metabolism	gene_name
+WBGene00000118	alh-12	alh-12	up	D	fatty acid degradation	gene_name
+WBGene00010035	F54C8.1	F54C8.1	up	D	fatty acid degradation	gene_name
+WBGene00010791	sodh-2	sodh-2	up	D	fatty acid degradation	gene_name
+WBGene00013894	ZC434.8	ZC434.8	up	D	Arg,Pro metabolism	gene_name
+WBGene00007328	pho-10	pho-10	up	D	lysosome	gene_name
+WBGene00003828	nuc-1	nuc-1	up	D	lysosome	gene_name
+WBGene00010722	K09E4.4	K09E4.4	up	D	lysosome	gene_name
+WBGene00004995	spp-10	spp-10	up	D	lysosome	gene_name
+WBGene00009192	asah-2	F27E5.1	up	D	lysosome	sequence_name
+WBGene00000786	cpr-6	cpr-6	up	D	lysosome	gene_name
+WBGene00010872	plag-15	M05B5.4	up	D	lysosome	sequence_name
+WBGene00010326	ndub-10	F59C6.5	up	D	oxidative phosphorylation	sequence_name
+WBGene00016393	ndua-13	C34B2.8	up	D	oxidative phosphorylation	sequence_name
+WBGene00012376	nduf-7	nduf-7	up	D	oxidative phosphorylation	gene_name
+WBGene00007548	lhpp-1	C13C4.4	up	D	oxidative phosphorylation	sequence_name
+WBGene00004092	ppt-1	ppt-1	up	D	fatty acid elongation	gene_name
+WBGene00003930	pat-3	pat-3	up_in_hlh30	E	phagosome	gene_name
+WBGene00000424	ced-10	ced-10	up_in_hlh30	E	phagosome	gene_name
+WBGene00011696	eea-1	eea-1	up_in_hlh30	E	phagosome	gene_name
+WBGene00004101	hgrs-1	hgrs-1	up_in_hlh30	E	phagosome	gene_name
+WBGene00004193	prx-3	prx-3	up_in_hlh30	E	peroxisome	gene_name
+WBGene00004268	rab-5	rab-5	up_in_hlh30	E	phagosome	gene_name
+WBGene00020425	syx-18	syx-18	up_in_hlh30	E	phagosome	gene_name
+WBGene00006932	vps-34	vps-34	up_in_hlh30	E	phagosome	gene_name
+WBGene00017781	F25E2.3	F25E2.3	up_in_hlh30	E	peroxisome	gene_name
+WBGene00015927	dyci-1	dyci-1	up_in_hlh30	E	phagosome	gene_name
+WBGene00015467	basl-1	basl-1	up_in_hlh30	E	Phe metabolism	gene_name
+WBGene00004512	rrn-1.1	rrn-1.1	up_in_hlh30	E	ribosome biogenesis	gene_name
+WBGene00016907	C53H9.2	C53H9.2	up_in_hlh30	E	ribosome biogenesis	gene_name
+WBGene00004622	rrn-3.1	rrn-3.1	up_in_hlh30	E	ribosome biogenesis	gene_name
+WBGene00007708	nola-3	nola-3	up_in_hlh30	E	ribosome biogenesis	gene_name
+WBGene00235197	rrn-4.16	rrn-4.16	up_in_hlh30	E	ribosome biogenesis	gene_name
+WBGene00009163	drsh-1	drsh-1	up_in_hlh30	E	ribosome biogenesis	gene_name
+WBGene00012730	xrn-1	xrn-1	up_in_hlh30	E	ribosome biogenesis	gene_name
+WBGene00010732	K10C3.5	K10C3.5	up_in_hlh30	E	ribosome biogenesis	gene_name
+WBGene00009232	nkat-1	nkat-1	up_in_hlh30	E	Trp metabolism	gene_name
+WBGene00013220	ctl-3	ctl-3	up_in_hlh30	E	peroxisome	gene_name
+WBGene00014206	nit-1	nit-1	up_in_hlh30	E	Trp metabolism	gene_name
+WBGene00004932	sod-3	sod-3	up_in_hlh30	E	peroxisome	gene_name
+WBGene00007363	stdh-1	stdh-1	up_in_hlh30	E	fatty acid elongation	gene_name
+WBGene00022849	acs-6	acs-6	up_in_hlh30	E	Phe metabolism	gene_name
+WBGene00009439	mlcd-1	mlcd-1	up_in_hlh30	E	peroxisome	gene_name
+WBGene00007516	gpx-5	gpx-5	up_in_hlh30	E	glutathione metabolism	gene_name
+WBGene00011867	chc-1	chc-1	up_in_hlh30	E	lysosome	gene_name
+WBGene00001149	bcat-1	bcat-1	up_in_hlh30	E	amino acid biosynthesis	gene_name
+WBGene00003999	pgp-5	pgp-5	up_in_hlh30	E	ABC transporters	gene_name
+WBGene00003408	mrp-2	mrp-2	up_in_hlh30	E	ABC transporters	gene_name
+WBGene00012326	W07E11.1	W07E11.1	up_in_hlh30	E	amino acid biosynthesis	gene_name
+WBGene00013597	gpi-1	gpi-1	up_in_hlh30	E	carbon metabolism	gene_name
+WBGene00016810	C50D2.7	C50D2.7	up_in_hlh30	E	carbon metabolism	gene_name
+WBGene00001686	gpd-4	gpd-4	up_in_hlh30	E	amino acid biosynthesis	gene_name
+WBGene00007653	cysl-1	cysl-1	up_in_hlh30	E	amino acid biosynthesis	gene_name
+WBGene00001479	fmo-4	fmo-4	up_in_hlh30	E	drug metabolism	gene_name
+WBGene00013693	Y105E8B.9	Y105E8B.9	up_in_hlh30	E	drug metabolism	gene_name
+WBGene00022817	upp-1	upp-1	up_in_hlh30	E	drug metabolism	gene_name
+WBGene00018698	vha-18	vha-18	up_in_hlh30	E	oxidative phosphorylation	gene_name
+WBGene00006568	thk-1	thk-1	up_in_hlh30	E	drug metabolism	gene_name
+WBGene00000110	alh-4	alh-4	up_in_hlh30	E	fatty acid degradation	gene_name
+WBGene00017084	gclm-1	E01A2.1	up_in_hlh30	E	glutathione metabolism	sequence_name
+WBGene00001607	gln-6	gln-6	up_in_hlh30	E	amino acid biosynthesis	gene_name
+WBGene00016207	C29E4.10	C29E4.10	up_in_hlh30	E	lysosome	gene_name
+WBGene00004877	smf-2	smf-2	up_in_hlh30	E	lysosome	gene_name
+WBGene00008052	ctns-1	ctns-1	up_in_hlh30	E	lysosome	gene_name
+WBGene00012144	lgmn-1	T28H10.3	up_in_hlh30	E	lysosome	sequence_name
+WBGene00000540	cln-3.2	cln-3.2	up_in_hlh30	E	lysosome	gene_name
+WBGene00000211	asm-1	asm-1	up_in_hlh30	E	lysosome	gene_name
+WBGene00008531	F02E9.7	F02E9.7	up_in_hlh30	E	lysosome	gene_name
+WBGene00011832	bgal-1	T19B10.3	up_in_hlh30	E	lysosome	sequence_name
+WBGene00020419	acdh-4	acdh-4	up_in_hlh30	E	fatty acid degradation	gene_name
+WBGene00017769	hmgs-1	hmgs-1	up_in_hlh30	E	Val,Leu,Ile degradation (BCAA catabolism)	gene_name

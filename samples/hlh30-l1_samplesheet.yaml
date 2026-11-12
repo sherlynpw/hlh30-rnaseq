@@ -1,0 +1,78 @@
+# hlh30-l1 - L1 only: WT vs hlh-30(tm1978), 3 replicates each (HNPZCJ run).
+#
+# A 6-sample subset of samples/hlh30-all_samplesheet.yaml. Kept as its own file
+# because VST_ALL/EXPLORATION operate on the full count matrix and ignore the
+# `groups` filter - subsetting has to happen at the samplesheet level.
+#
+# Purpose: with the L1-vs-rest axis removed, does WT separate from tm1978?
+# In the combined 34-sample PCA the two genotypes were fully intermingled
+# within the L1 cluster, but that PCA's PC1/PC2 were spent on stage.
+
+samples:
+  # --- WT L1 ---
+  - sample_id: WT_L1_1
+    bam: s3://celegans-pipeline-rayandrew/data/HNPZCJ_bam/HNPZCJ_1_WT_L1_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: WT
+    stage: L1
+    temperature: L1
+    source: plasmidsaurus
+    run: HNPZCJ
+    replicate: 1
+
+  - sample_id: WT_L1_2
+    bam: s3://celegans-pipeline-rayandrew/data/HNPZCJ_bam/HNPZCJ_2_WT_L1_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: WT
+    stage: L1
+    temperature: L1
+    source: plasmidsaurus
+    run: HNPZCJ
+    replicate: 2
+
+  - sample_id: WT_L1_3
+    bam: s3://celegans-pipeline-rayandrew/data/HNPZCJ_bam/HNPZCJ_3_WT_L1_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: WT
+    stage: L1
+    temperature: L1
+    source: plasmidsaurus
+    run: HNPZCJ
+    replicate: 3
+
+  # --- hlh-30(tm1978) L1 ---
+  - sample_id: tm1978_L1_1
+    bam: s3://celegans-pipeline-rayandrew/data/HNPZCJ_bam/HNPZCJ_4_hlh-30_L1_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: tm1978
+    stage: L1
+    temperature: L1
+    source: plasmidsaurus
+    run: HNPZCJ
+    replicate: 1
+
+  - sample_id: tm1978_L1_2
+    bam: s3://celegans-pipeline-rayandrew/data/HNPZCJ_bam/HNPZCJ_5_hlh-30_L1_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: tm1978
+    stage: L1
+    temperature: L1
+    source: plasmidsaurus
+    run: HNPZCJ
+    replicate: 2
+
+  - sample_id: tm1978_L1_3
+    bam: s3://celegans-pipeline-rayandrew/data/HNPZCJ_bam/HNPZCJ_6_hlh-30_L1_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: tm1978
+    stage: L1
+    temperature: L1
+    source: plasmidsaurus
+    run: HNPZCJ
+    replicate: 3

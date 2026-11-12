@@ -1,0 +1,81 @@
+# hlh30-all-ruv - the VZRJXQ-ruv-rbe method applied to all 34 samples (L1 added).
+#
+# Same settings as samples/VZRJXQ-ruv-rbe.yaml: RUVs k=1, ~ W_1 + replicate +
+# genotype_stage, corrected VST, num_clusters auto. Clustering selects genes by
+# the union of all 16 pairwise contrasts (no filtering), exactly as before.
+#
+# Enrichment is off for now - this run is to inspect the cluster profiles and
+# see whether anything survives beyond "L1-high" / "adult-high".
+#
+# Usage: bash run.sh --params samples/hlh30-all-ruv.yaml --profile aws
+
+id: hlh30-all-ruv
+input: samples/hlh30-all_samplesheet.yaml
+
+# GO only. KEGG/WormCat/GSEA off, and compare_de off, to keep this focused on
+# the k-means clusters. GO still runs for the other clustering methods too -
+# enrichment.nf has no per-method toggle - so read clustering/kmeans/ only.
+
+organism:
+  genome: WBcel235
+  gtf: "s3://celegans-pipeline-rayandrew/refs/Caenorhabditis_elegans.WBcel235.115.gtf"
+  ensembl_release: 115
+  kegg_org: "cel"
+  org_db: "org.Ce.eg.db"
+  biomart_dataset: "celegans_gene_ensembl"
+  gene_db: "s3://celegans-pipeline-rayandrew/refs/gene_db.sqlite"
+
+deseq2:
+  padj_threshold: 0.05
+  lfc_threshold: 1.0
+  shrinkage: "apeglm"
+  condition_from: "genotype_stage"
+  reference: "WT_L4"
+  batch: replicate
+
+ruvseq:
+  enabled: true
+  method: "RUVs"
+  k: 1
+  anchor_groups: null
+
+groups:
+  all:
+    genotype: ["WT", "tm1978"]
+    stage: ["L1", "L4", "Day3", "Day6"]
+
+clustering:
+  num_clusters: "auto"
+  sort_by: "pvalue"
+  correct_vst: true
+  condition_order: "WT_L1,WT_L4,WT_Day3,WT_Day6,tm1978_L1,tm1978_L4,tm1978_Day3,tm1978_Day6"
+
+enrichment:
+  compare_de: false
+  go:
+    enabled: true
+    padj_filter: "padj"
+    padj: 0.05
+    lfc: 0
+  kegg:
+    enabled: false
+  wormcat:
+    enabled: false
+  gsea:
+    enabled: false
+    # Must be overridden: the nextflow.config default is ['go','kegg'] (strings),
+    # but enrichment.nf:62 does file(entry.file) and expects {name,file} maps.
+    # It is parsed even when gsea is disabled, so leaving the default errors.
+    collections: []
+    # Also required even though gsea is off: enrichment.nf:54 falls back to the
+    # bare string 'NO_ORTHOLOG_MAP', which resolves against the run CWD rather
+    # than assets/, so staging fails on a file that does not exist.
+    ortholog_map: "s3://celegans-pipeline-rayandrew/refs/orthologs/wormbase_to_human_symbol.tsv"
+
+  ssgsea:
+    enabled: false
+
+exploration:
+  pca_color_by: ["genotype", "stage", "run", "replicate"]
+
+outdir: "s3://celegans-pipeline-rayandrew/results"

@@ -1,0 +1,18 @@
+run	path	ontology	terms
+VZRJXQ-ruv-rbe	kmeans/cluster_1_genes	BP	cell killing; defense response
+VZRJXQ-ruv-rbe	kmeans/cluster_1_genes	CC
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_Day3__X__N2_Day6_vs_N2_Day3_genes_N2_Day6_vs_N2_Day3_exclusive_up	CC
+VZRJXQ_no_l4-ruv-rbe	kmeans/cluster_2_genes	BP	cell killing; defense response; immune response; neuropeptide signaling pathway
+VZRJXQ_no_l4-ruv-rbe	kmeans/cluster_3_genes	BP	cuticle development; cell killing; molting cycle; defense response
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_hlh-30_Day3_vs_hlh-30_L4_exclusive_down	CC	peroxisome; microbody; mitochondrial inner membrane; striated muscle dense body; mitochondrial envelope
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_down	BP	erythrose 4-phosphate/phosphoenolpyruvate family amino acid catabolic process => E4P/PEP family amino acid catabolic process; male gamete generation; protein dephosphorylation; cell surface receptor protein tyrosine kinase signaling pathway => tyrosine kinase signaling pathway; protein phosphorylation
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_down	CC	pseudopodium; vacuolar proton-transporting V-type ATPase complex => V-ATPase; membrane raft; sarcomere; myofibril
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_up	BP	cell killing; molting cycle; protein refolding; cuticle development; defense response
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_Day3__X__N2_Day6_vs_N2_Day3_genes_hlh-30_Day6_vs_hlh-30_Day3_exclusive_down	BP	nucleobase biosynthetic process; cuticle development; molting cycle; endoplasmic reticulum unfolded protein response; defense response
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_Day3__X__N2_Day6_vs_N2_Day3_genes_hlh-30_Day6_vs_hlh-30_Day3_exclusive_down	CC	cuticular extracellular matrix; collagen trimer; membrane raft; lysosome; lytic vacuole
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_Day3__X__N2_Day6_vs_N2_Day3_genes_N2_Day6_vs_N2_Day3_exclusive_down	BP	carbohydrate transport; immune response; defense response
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_hlh-30_Day6_vs_hlh-30_L4_exclusive_down	BP	aerobic respiration; electron transport chain; cellular catabolic process
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_hlh-30_Day6_vs_hlh-30_L4_exclusive_down	CC	cytochrome complex; sarcomere; myofibril; mitochondrial membrane; transporter complex; ribosome
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_hlh-30_Day6_vs_hlh-30_L4_exclusive_up	BP	epithelium development; defense response to Gram-positive bacterium => defense response; germ cell development; cell fate specification; gamete generation; positive regulation of biosynthetic process
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_hlh-30_Day6_vs_hlh-30_L4_exclusive_up	CC	dystrophin-associated glycoprotein complex; cullin-RING ubiquitin ligase complex
+VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_N2_Day6_vs_N2_L4_exclusive_up	BP	protein refolding; defense response; molting cycle; immune response

@@ -1,0 +1,10 @@
+run	path	ontology	terms
+hlh30-all-ruv	kmeans/cluster_1_genes	BP	synaptic signaling; neuropeptide signaling pathway; regulation of membrane potential; nervous system development; potassium ion transport
+hlh30-all-ruv	kmeans/cluster_4_genes	BP	defense response; innate immune response; cell fate specification; cell fate commitment; negative regulation of developmental process => neg. regulation of development
+hlh30-all-ruv	kmeans/cluster_2_genes	BP	carboxylic acid metabolic process; organic acid catabolic process; alpha-amino acid catabolic process; monocarboxylic acid metabolic process; proton transmembrane transport
+hlh30-all-ruv	kmeans/cluster_5_genes	BP	translation; mitochondrial translation; tRNA metabolic process; amino acid metabolic process; ribonucleoprotein complex biogenesis => RNP complex biogenesis
+hlh30-all-ruv	kmeans/cluster_6_genes	BP	defense response; innate immune response; defense response to bacterium; defense response to Gram-positive bacterium => defense response to Gram+ bacterium; ER-nucleus signaling pathway
+hlh30-all-ruv	kmeans/cluster_3_genes	BP	cell cycle process; sexual reproduction; meiotic cell cycle; DNA repair; RNA splicing
+hlh30-all-ruv	filter_de/filtered_tm1978_L1_vs_WT_L1_genes_down	BP	defense response to Gram-positive bacterium => defense response to Gram+ bacterium; macroautophagy; autophagosome assembly; autophagy of mitochondrion => mitophagy; nucleophagy; vacuole organization; proteolysis involved in protein catabolic process => proteolysis (protein catabolism)
+hlh30-all-ruv	filter_de/filtered_tm1978_L1_vs_WT_L1_genes_up	BP	defense response; innate immune response; defense response to Gram-negative bacterium => defense response to Gram- bacterium; response to superoxide; iron ion transport; monocarboxylic acid metabolic process
+hlh30-all-ruv	filter_de/filtered_tm1978_L1_vs_WT_L1_genes_de	BP	defense response; defense response to Gram-positive bacterium => defense response to Gram+ bacterium; defense response to bacterium; autophagosome assembly; macroautophagy; protein catabolic process

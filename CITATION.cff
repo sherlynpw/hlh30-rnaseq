@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper and this software archive."
+type: software
+title: "Analysis code for: Caenorhabditis elegans HLH-30 has age-dependent effects on the transcriptome and is required for normal progeny number and larval survival under basal growth conditions"
+abstract: >-
+  Nextflow pipeline and R scripts for the hlh-30(tm1978) RNA-seq study of
+  Caenorhabditis elegans at L1, L4, Day 3 and Day 6 of adulthood. The pipeline
+  counts reads with featureCounts, removes unwanted variation with RUVSeq, tests
+  differential expression with DESeq2, clusters genes and runs the enrichment
+  tests. The scripts in posthoc/rz draw the figure panels and build the
+  supplementary files. The RNA-seq data are in NCBI GEO under accession GSE354145.
+authors:
+  - given-names: Ruiling
+    family-names: Zhong
+    affiliation: "Department of Genetics, University of Wisconsin-Madison"
+  - given-names: Sherlyn P.
+    family-names: Wijaya
+    affiliation: "Department of Genetics, University of Wisconsin-Madison"
+  - given-names: Ray A. O.
+    family-names: Sinurat
+    affiliation: "Department of Computer Science, University of Chicago"
+  - given-names: Serenity D.
+    family-names: Her
+    affiliation: "Department of Genetics, University of Wisconsin-Madison"
+  - given-names: Qiyue
+    family-names: Ying
+    affiliation: "Department of Genetics, University of Wisconsin-Madison"
+  - given-names: Claire E.
+    family-names: Richardson
+    affiliation: "Department of Genetics, University of Wisconsin-Madison"
+repository-code: "https://github.com/rayandrew/hlh30-rnaseq"
+license: MIT
+version: 1.0.0
+keywords:
+  - Caenorhabditis elegans
+  - HLH-30
+  - TFEB
+  - RNA-seq
+  - differential expression
+  - aging
+  - Nextflow

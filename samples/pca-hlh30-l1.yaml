@@ -1,0 +1,64 @@
+# pca-hlh30-l1 - PCA-only run on the 6 L1 samples alone (WT vs hlh-30(tm1978)).
+#
+# In the combined 34-sample PCA (samples/pca-hlh30-all.yaml) PC1 (67%) was the
+# L1-vs-rest axis and PC2 (25%) was L4-vs-adult, so both leading PCs were spent
+# on stage and the two genotypes sat on top of each other inside the L1 cluster.
+# Restricting to L1 re-centres the decomposition on whatever varies among these
+# six libraries, so genotype gets a chance to surface.
+#
+# Read the result with care: with n=6 and no other factor in play, PC1 is
+# whatever dominates within this one run - genotype, replicate/harvest batch, or
+# depth. Check pca_replicate.pdf alongside pca_genotype.pdf before concluding
+# that a genotype split is real. Absence of separation here is weak evidence
+# either way; PCA is unsupervised and a modest true effect can hide below the
+# leading PCs. A 3-vs-3 DESeq2 contrast is the test that actually answers it.
+#
+# Clustering + enrichment are skipped, so DESeq2 does not run and the VST comes
+# from VST_ALL with a blind ~1 design. The deseq2 block is kept only so shared
+# params validate.
+#
+# Usage: bash run.sh --params samples/pca-hlh30-l1.yaml --profile aws
+
+id: pca-hlh30-l1
+input: samples/hlh30-l1_samplesheet.yaml
+
+skip_clustering: true
+skip_enrichment: true
+
+organism:
+  genome: WBcel235
+  gtf: "s3://celegans-pipeline-rayandrew/refs/Caenorhabditis_elegans.WBcel235.115.gtf"
+  ensembl_release: 115
+  kegg_org: "cel"
+  org_db: "org.Ce.eg.db"
+  biomart_dataset: "celegans_gene_ensembl"
+  gene_db: "s3://celegans-pipeline-rayandrew/refs/gene_db.sqlite"
+
+deseq2:
+  padj_threshold: 0.05
+  lfc_threshold: 1.0
+  shrinkage: "apeglm"
+  condition_from: "genotype"
+  reference: "WT"
+  batch: null
+
+ruvseq:
+  enabled: false
+
+groups:
+  all:
+    genotype: ["WT", "tm1978"]
+    stage: ["L1"]
+
+clustering:
+  num_clusters: "auto"
+  sort_by: "pvalue"
+  correct_vst: false
+  condition_order: "WT,tm1978"
+
+exploration:
+  # replicate is included deliberately: it is the main competing explanation
+  # for any structure seen among these six samples.
+  pca_color_by: ["genotype", "replicate"]
+
+outdir: "s3://celegans-pipeline-rayandrew/results"

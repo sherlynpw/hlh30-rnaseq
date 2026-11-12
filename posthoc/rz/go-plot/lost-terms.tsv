@@ -1,0 +1,14 @@
+# GO terms the author's panels showed before the 2026-10-12 forward-strand
+# rerun that are no longer significant there (from targets-paper-figures.tsv
+# at d75b5b3^). run/path = the panel's current gene list, old_run/old_path =
+# the list the old panel used (in results/_unstranded-2026-10-12/).
+# `make lost` reruns GO on each run/path with no cutoff for their current values.
+fig	ontology	term	run	path	old_run	old_path
+Fig 3D	CC	lysosome	VZRJXQ-ruv-rbe	kmeans/cluster_4_genes	VZRJXQ-ruv-rbe	kmeans/cluster_1_genes
+Fig 4C	CC	striated muscle dense body	VZRJXQ-ruv-rbe	compare_de_tested_both/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_hlh-30_Day3_vs_hlh-30_L4_exclusive_down	VZRJXQ-ruv-rbe	compare_de/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_hlh-30_Day3_vs_hlh-30_L4_exclusive_down
+Fig S2B	BP	erythrose 4-phosphate/phosphoenolpyruvate family amino acid catabolic process	VZRJXQ-ruv-rbe	compare_de_tested_both/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_down	VZRJXQ-ruv-rbe	compare_de/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_down
+Fig S2B	BP	male gamete generation	VZRJXQ-ruv-rbe	compare_de_tested_both/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_down	VZRJXQ-ruv-rbe	compare_de/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_down
+Fig S2B	BP	cell surface receptor protein tyrosine kinase signaling pathway	VZRJXQ-ruv-rbe	compare_de_tested_both/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_down	VZRJXQ-ruv-rbe	compare_de/hlh-30_Day3_vs_hlh-30_L4__X__N2_Day3_vs_N2_L4_genes_N2_Day3_vs_N2_L4_exclusive_down
+Fig 4E	BP	defense response to Gram-positive bacterium	VZRJXQ-ruv-rbe	compare_de_tested_both/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_hlh-30_Day6_vs_hlh-30_L4_exclusive_up	VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_hlh-30_Day6_vs_hlh-30_L4_exclusive_up
+Fig 4E	BP	positive regulation of biosynthetic process	VZRJXQ-ruv-rbe	compare_de_tested_both/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_hlh-30_Day6_vs_hlh-30_L4_exclusive_up	VZRJXQ-ruv-rbe	compare_de/hlh-30_Day6_vs_hlh-30_L4__X__N2_Day6_vs_N2_L4_genes_hlh-30_Day6_vs_hlh-30_L4_exclusive_up
+Fig 9M	CC	nuclear pore	hlh30-all-ruv	compare_de/tm1978_L4_vs_tm1978_L1__X__WT_L4_vs_WT_L1_genes_WT_L4_vs_WT_L1_exclusive_up	hlh30-all-ruv	compare_de/tm1978_L4_vs_tm1978_L1__X__WT_L4_vs_WT_L1_genes_WT_L4_vs_WT_L1_exclusive_up

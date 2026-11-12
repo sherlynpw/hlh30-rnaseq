@@ -1,0 +1,293 @@
+# VZRJXQ experiment - N2 vs hlh-30, L4/Day3/Day6, RT/20C
+# Upload data first: aws s3 sync data/VZRJXQ_bam/ s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/
+
+samples:
+  # --- N2 L4 ---
+  - sample_id: N2_L4_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_1_N2_L4_rep_1_dedup-mapped-reads/VZRJXQ_1_N2_L4_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: L4
+    temperature: L4
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: N2_L4_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_2_N2_L4_rep_2_dedup-mapped-reads/VZRJXQ_2_N2_L4_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: L4
+    temperature: L4
+    source: plasmidsaurus
+    replicate: 2
+
+  - sample_id: N2_L4_3
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_3_N2_L4_rep_3_dedup-mapped-reads/VZRJXQ_3_N2_L4_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: L4
+    temperature: L4
+    source: plasmidsaurus
+    replicate: 3
+
+  # --- hlh-30 L4 ---
+  - sample_id: hlh30_L4_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_4_hlh-30_L4_rep_1_dedup-mapped-reads/VZRJXQ_4_hlh-30_L4_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: L4
+    temperature: L4
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: hlh30_L4_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_5_hlh-30_L4_rep_2_dedup-mapped-reads/VZRJXQ_5_hlh-30_L4_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: L4
+    temperature: L4
+    source: plasmidsaurus
+    replicate: 2
+
+  - sample_id: hlh30_L4_3
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_6_hlh-30_L4_rep_3_dedup-mapped-reads/VZRJXQ_6_hlh-30_L4_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: L4
+    temperature: L4
+    source: plasmidsaurus
+    replicate: 3
+
+  # --- N2 RT Day3 ---
+  - sample_id: N2_RT_Day3_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_7_N2_RT_Day3_rep_1_dedup-mapped-reads/VZRJXQ_7_N2_RT_Day3_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day3
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: N2_RT_Day3_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_8_N2_RT_Day3_rep_2_dedup-mapped-reads/VZRJXQ_8_N2_RT_Day3_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day3
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 2
+
+  - sample_id: N2_RT_Day3_3
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_9_N2_RT_Day3_rep_3_dedup-mapped-reads/VZRJXQ_9_N2_RT_Day3_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day3
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 3
+
+  # --- hlh-30 RT Day3 ---
+  - sample_id: hlh30_RT_Day3_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_10_hlh-30_RT_Day3_rep_1_dedup-mapped-reads/VZRJXQ_10_hlh-30_RT_Day3_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day3
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: hlh30_RT_Day3_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_11_hlh-30_RT_Day3_rep_2_dedup-mapped-reads/VZRJXQ_11_hlh-30_RT_Day3_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day3
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 2
+
+  - sample_id: hlh30_RT_Day3_3
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_12_hlh-30_RT_Day3_rep_3_dedup-mapped-reads/VZRJXQ_12_hlh-30_RT_Day3_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day3
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 3
+
+  # --- N2 20C Day3 ---
+  - sample_id: N2_20C_Day3_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_13_N2_20C_Day3_rep_1_dedup-mapped-reads/VZRJXQ_13_N2_20C_Day3_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day3
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: N2_20C_Day3_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_14_N2_20C_Day3_rep_2_dedup-mapped-reads/VZRJXQ_14_N2_20C_Day3_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day3
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 2
+
+  - sample_id: N2_20C_Day3_3
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_15_N2_20C_Day3_rep_3_dedup-mapped-reads/VZRJXQ_15_N2_20C_Day3_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day3
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 3
+
+  # --- hlh-30 20C Day3 ---
+  - sample_id: hlh30_20C_Day3_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_16_hlh-30_20C_Day3_rep_1_dedup-mapped-reads/VZRJXQ_16_hlh-30_20C_Day3_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day3
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: hlh30_20C_Day3_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_17_hlh-30_20C_Day3_rep_2_dedup-mapped-reads/VZRJXQ_17_hlh-30_20C_Day3_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day3
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 2
+
+  - sample_id: hlh30_20C_Day3_3
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_18_hlh-30_20C_Day3_rep_3_dedup-mapped-reads/VZRJXQ_18_hlh-30_20C_Day3_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day3
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 3
+
+  # --- N2 RT Day6 ---
+  - sample_id: N2_RT_Day6_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_19_N2_RT_Day6_rep_1_dedup-mapped-reads/VZRJXQ_19_N2_RT_Day6_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day6
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: N2_RT_Day6_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_20_N2_RT_Day6_rep_2_dedup-mapped-reads/VZRJXQ_20_N2_RT_Day6_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day6
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 2
+
+  # --- hlh-30 RT Day6 ---
+  - sample_id: hlh30_RT_Day6_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_21_hlh-30_RT_Day6_rep_1_dedup-mapped-reads/VZRJXQ_21_hlh-30_RT_Day6_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day6
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: hlh30_RT_Day6_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_22_hlh-30_RT_Day6_rep_2_dedup-mapped-reads/VZRJXQ_22_hlh-30_RT_Day6_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day6
+    temperature: RT
+    source: plasmidsaurus
+    replicate: 2
+
+  # --- N2 20C Day6 ---
+  - sample_id: N2_20C_Day6_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_23_N2_20C_Day6_rep_1_dedup-mapped-reads/VZRJXQ_23_N2_20C_Day6_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day6
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: N2_20C_Day6_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_24_N2_20C_Day6_rep_2_dedup-mapped-reads/VZRJXQ_24_N2_20C_Day6_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day6
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 2
+
+  - sample_id: N2_20C_Day6_3
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_25_N2_20C_Day6_rep_3_dedup-mapped-reads/VZRJXQ_25_N2_20C_Day6_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: N2
+    stage: Day6
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 3
+
+  # --- hlh-30 20C Day6 ---
+  - sample_id: hlh30_20C_Day6_1
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_26_hlh-30_20C_Day6_rep_1_dedup-mapped-reads/VZRJXQ_26_hlh-30_20C_Day6_rep_1_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day6
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 1
+
+  - sample_id: hlh30_20C_Day6_2
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_27_hlh-30_20C_Day6_rep_2_dedup-mapped-reads/VZRJXQ_27_hlh-30_20C_Day6_rep_2_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day6
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 2
+
+  - sample_id: hlh30_20C_Day6_3
+    bam: s3://celegans-pipeline-rayandrew/data/VZRJXQ_bam/VZRJXQ_28_hlh-30_20C_Day6_rep_3_dedup-mapped-reads/VZRJXQ_28_hlh-30_20C_Day6_rep_3_dedup-mapped-reads.bam
+    input_type: plasmidsaurus_bam
+    strandedness: forward
+    genotype: hlh-30
+    stage: Day6
+    temperature: 20C
+    source: plasmidsaurus
+    replicate: 3

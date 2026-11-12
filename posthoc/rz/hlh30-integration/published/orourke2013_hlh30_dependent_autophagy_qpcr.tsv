@@ -1,0 +1,7 @@
+gene_id	gene_name	source_gene	direction	wt_fasting_fc_mean_sem	hlh30_fasting_fc_mean_sem	map_method
+WBGene00010882	atg-7	atg-7	up	1.89±0.22	1.12±0.32	gene_name
+WBGene00020706	atg-9	atg-9	up	1.67±0.42	1.01±0.06	gene_name
+WBGene00008427	atg-10	atg-10	up	2.11±0.35	0.87±.11	gene_name
+WBGene00017045	atg-13	atg-13	up	1.78±0.31	0.69±0.27	gene_name
+WBGene00017178	atg-16.1	atg-16.1	up	1.99±0.14	1.23±0.09	gene_name
+WBGene00006786	unc-51	unc-51	up	2.54±0.56	0.97±0.15	gene_name

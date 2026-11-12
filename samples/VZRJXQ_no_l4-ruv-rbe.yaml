@@ -1,0 +1,86 @@
+# VZRJXQ - N2 vs hlh-30, Day3/Day6 only (no L4) - RUV + replicate-batch combined variant
+# Combines: explicit batch covariate (replicate) AND RUVSeq W_1 in the design.
+# Design: ~ W_1 + replicate + condition  (15 residual df from 22 samples - comfortable)
+#
+# Use this when replicate alone doesn't fully clean residual structure on PCA/UMAP
+# and you want RUV to mop up unobserved variation. Check ruv_diagnostics.tsv -
+# if cor(W_1, replicate) is high, the two terms are redundant and you should pick one.
+#
+# Usage: nextflow run main.nf -params-file samples/VZRJXQ_no_l4-ruv-rbe.yaml -profile aws -resume
+
+id: VZRJXQ_no_l4-ruv-rbe
+input: samples/VZRJXQ_samplesheet_no_l4.yaml
+
+organism:
+  genome: WBcel235
+  gtf: "s3://celegans-pipeline-rayandrew/refs/Caenorhabditis_elegans.WBcel235.115.gtf"
+  ensembl_release: 115
+  kegg_org: "cel"
+  org_db: "org.Ce.eg.db"
+  biomart_dataset: "celegans_gene_ensembl"
+  gene_db: "s3://celegans-pipeline-rayandrew/refs/gene_db.sqlite"
+
+deseq2:
+  padj_threshold: 0.05
+  lfc_threshold: 1.0
+  shrinkage: "apeglm"
+  condition_from: "genotype_stage"
+  reference: "N2_Day3"
+  batch: replicate
+
+ruvseq:
+  enabled: true
+  method: "RUVs"
+  k: 1
+  anchor_groups: null
+
+groups:
+  all:
+    genotype: ["N2", "hlh-30"]
+    stage: ["Day3", "Day6"]
+
+clustering:
+  min_pts: 10
+  num_clusters: "auto"
+  kmeans_num_clusters: 4
+  sort_by: "pvalue"
+  correct_vst: true
+  condition_order: "N2_Day3,N2_Day6,hlh-30_Day3,hlh-30_Day6"
+
+enrichment:
+  compare_de: false
+  go:
+    enabled: true
+    padj_filter: "padj"
+    padj: 0.05
+    lfc: 0
+  kegg:
+    enabled: true
+    padj_filter: "padj"
+    padj: 0.05
+    lfc: 0
+  wormcat:
+    enabled: true
+    padj_filter: "pvalue"
+    padj: 0.05
+  gsea:
+    enabled: true
+    ranking: "stat"
+    min_size: 15
+    max_size: 10000
+    builtin: []
+    collections:
+      - name: hallmark
+        file: "s3://celegans-pipeline-rayandrew/refs/msigdb/hallmark.gmt"
+        map_ortholog: true
+      - name: curated
+        file: "s3://celegans-pipeline-rayandrew/refs/msigdb/curated.gmt"
+        map_ortholog: true
+    ortholog_map: "s3://celegans-pipeline-rayandrew/refs/orthologs/wormbase_to_human_symbol.tsv"
+    ortholog_from: "wormbase_gene"
+    ortholog_to: "human_symbol"
+
+exploration:
+  pca_color_by: ["genotype", "stage", "temperature"]
+
+outdir: "s3://celegans-pipeline-rayandrew/results"

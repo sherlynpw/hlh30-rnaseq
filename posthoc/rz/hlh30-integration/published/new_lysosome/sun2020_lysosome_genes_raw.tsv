@@ -1,0 +1,86 @@
+category	gene	description
+Lysosomal membrane proteins	scav-3	ortholog of human CD36 antigen
+Lysosomal membrane proteins	lmp-1	similar to vertebrate lysosome-associated membrane protein CD68
+Lysosomal membrane proteins	lmp-2	orthologous to LAMP (lysosomal associated membrane glycoprotein)
+Lysosomal membrane proteins	ncr-1	orthologous to human NPC1
+Lysosomal membrane proteins	ncr-2	orthologous to human NPC1
+Lysosomal membrane proteins	cup-5	calcium transporter
+Lysosomal membrane proteins	slc-36.2	proton-coupled amino acid transporter
+Lysosomal membrane proteins	Y51F10.4	amino acid transporter
+Lysosomal membrane proteins	laat-1	ortholog of human PQLC2
+Lysosomal membrane proteins	ctns-1	lysosomal cystine transporter
+Lysosomal membrane proteins	F13H10.3	ortholog of human SLC38A9
+V0 subunits	vha-1	ortholog of subunit c of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-2	ortholog of subunit c of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-3	ortholog of subunit c of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-4	ortholog of subunit b of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-5	ortholog of subunit a of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-6	ortholog of subunit a of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-7	ortholog of subunit a of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-16	ortholog of subunit d of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-17	ortholog of subunit e of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	vha-19	ortholog of subunit Ac45 of the membrane-bound (V0) domain of V-ATPase
+V0 subunits	unc-32	ortholog of subunit a of the membrane-bound (V0) domain of V-ATPase
+V1 subunits	vha-8	ortholog of subunit E of the cytoplasmic (V1) domain of V-ATPase
+V1 subunits	vha-9	ortholog of subunit F of the cytoplasmic (V1) domain of V-ATPase
+V1 subunits	vha-10	ortholog of subunit G of the cytoplasmic (V1) domain of V-ATPase
+V1 subunits	vha-11	ortholog of subunit C of the cytoplasmic (V1) domain of V-ATPase
+V1 subunits	vha-12	ortholog of subunit B of the cytoplasmic (V1) domain of V-ATPase
+V1 subunits	vha-13	ortholog of subunit A of the cytoplasmic (V1) domain of V-ATPase
+V1 subunits	vha-14	ortholog of subunit D of the cytoplasmic (V1) domain of V-ATPase
+V1 subunits	vha-15	ortholog of subunit H of the cytoplasmic (V1) domain of V-ATPase
+V1 subunits	vha-18	ortholog of subunit H of the cytoplasmic (V1) domain of V-ATPase
+Protease (cathepsins)	ctsa-1	ortholog of human CTSA (cathepsin A)
+Protease (cathepsins)	Y40D12A.2	ortholog of human CTSA (cathepsin A)
+Protease (cathepsins)	F41C3.5	ortholog of human CTSA (cathepsin A)
+Protease (cathepsins)	K10C2.1	ortholog of human CTSA (cathepsin A)
+Protease (cathepsins)	Y16B4A.2	ortholog of human CTSA (cathepsin A)
+Protease (cathepsins)	F32A5.3	ortholog of human CTSA (cathepsin A)
+Protease (cathepsins)	K10B2.2	ortholog of human CTSA (cathepsin A)
+Protease (cathepsins)	asp-1	ortholog of cathepsin D aspartic protease
+Protease (cathepsins)	asp-3	ortholog of aspartyl protease
+Protease (cathepsins)	asp-4	ortholog of aspartyl protease
+Protease (cathepsins)	asp-8	ortholog of aspartyl protease
+Protease (cathepsins)	asp-13	ortholog of aspartyl protease
+Protease (cathepsins)	cpr-1	ortholog of human CTSB (cathepsin B)
+Protease (cathepsins)	cpr-2	ortholog of human CTSB (cathepsin B)
+Protease (cathepsins)	cpr-3	ortholog of human CTSB (cathepsin B)
+Protease (cathepsins)	cpr-4	ortholog of human CTSB (cathepsin B)
+Protease (cathepsins)	cpr-5	ortholog of human CTSB (cathepsin B)
+Protease (cathepsins)	cpr-6	ortholog of human CTSB (cathepsin B)
+Protease (cathepsins)	cpr-8	ortholog of human CTSB (cathepsin B)
+Protease (cathepsins)	T28H10.3	ortholog of human CTSB (cathepsin B)
+Protease (cathepsins)	cpl-1	member of the cathepsin L-like cysteine protease family
+Protease (cathepsins)	cpz-1	ortholog of cathepsin z-like cysteine protease
+Protease (cathepsins)	tag-196	ortholog of human CTSF
+Protease (cathepsins)	tag-329	ortholog of human CTSO
+Protease (cathepsins)	Y40H7A.10	ortholog of human CTSO
+Protease (cathepsins)	F15D4.4	cysteine-type peptidase
+Non-protease hydrolases	asm-1	sphingomyelin phosphodiesterase
+Non-protease hydrolases	asm-2	sphingomyelin phosphodiesterase
+Non-protease hydrolases	asm-3	sphingomyelin phosphodiesterase
+Non-protease hydrolases	sul-1	the sole C. elegans 6-O-endosulfatase
+Non-protease hydrolases	sul-2	orthologous to the human gene encoding arylsulfatase A
+Non-protease hydrolases	sul-3	orthologous to the human gene encoding arylsulfatase B
+Non-protease hydrolases	hex-1	a beta-N-acetylhexosaminidase
+Non-protease hydrolases	hex-2	a beta-N-acetylhexosaminidase
+Non-protease hydrolases	hex-3	a beta-N-acetylhexosaminidase
+Non-protease hydrolases	hex-4	a beta-N-acetylhexosaminidase
+Non-protease hydrolases	hex-5	a beta-N-acetylhexosaminidase
+Non-protease hydrolases	gba-1	homologous to the human gene encoding glucocerebrosidase
+Non-protease hydrolases	gba-2	homologous to the human gene encoding glucocerebrosidase
+Non-protease hydrolases	gba-3	homologous to the human gene encoding glucocerebrosidase
+Non-protease hydrolases	gba-4	homologous to the human gene encoding glucocerebrosidase
+Non-protease hydrolases	pho-1	acid phosphatase
+Non-protease hydrolases	pho-10	acid phosphatase
+Non-protease hydrolases	Y105E8B.9	orthologous to the human gene encoding glutathione transferase zeta 1
+Non-protease hydrolases	M05B5.4	phospholipase A2
+Non-protease hydrolases	rnst-2	ribonuclease
+Non-protease hydrolases	lipl-1	orthologous to members of the human Lipase family
+Non-protease hydrolases	lipl-2	orthologous to members of the human Lipase family
+Non-protease hydrolases	lipl-3	orthologous to members of the human Lipase family
+Non-protease hydrolases	lipl-4	orthologous to members of the human Lipase family
+Non-protease hydrolases	lipl-5	orthologous to members of the human Lipase family
+Non-protease hydrolases	lipl-6	orthologous to members of the human Lipase family
+Non-protease hydrolases	lipl-7	orthologous to members of the human Lipase family
+Non-protease hydrolases	lipl-8	orthologous to members of the human Lipase family

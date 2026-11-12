@@ -1,0 +1,94 @@
+# pca-hlh30-all-ruv - PCA over all 34 samples (L1 + L4 + Day3 + Day6) with
+# RUVs correction applied to the VST.
+#
+# Companion to samples/pca-hlh30-all.yaml, which is the uncorrected version.
+#
+# ---------------------------------------------------------------------------
+# WHY THE SKIP FLAGS LOOK BACKWARDS
+# ---------------------------------------------------------------------------
+# RUVSEQ runs *inside* the DIFFERENTIAL subworkflow (subworkflows/local/
+# differential.nf:14), and main.nf:122 only runs DIFFERENTIAL when
+#
+#     need_differential = !skip_clustering || !skip_enrichment
+#
+# So a config with BOTH skip_clustering and skip_enrichment set to true never
+# runs RUVSEQ at all - `ruvseq.enabled: true` would be silently ignored and the
+# PCA would come out uncorrected with no warning.
+#
+# Setting skip_enrichment: false flips need_differential on, so DESeq2 + RUVSEQ
+# run. ENRICHMENT itself stays off because main.nf:151 gates it on
+# `!skip_enrichment && !skip_clustering`, and skip_clustering is still true.
+# Net effect: RUV + DESeq2 + corrected VST + PCA, no clustering, no enrichment.
+#
+# ---------------------------------------------------------------------------
+# WHY RUVs IS SAFE HERE DESPITE THE L1/run CONFOUND
+# ---------------------------------------------------------------------------
+# `run` (VZRJXQ vs HNPZCJ) is the identical partition to `stage == L1`, so any
+# method taking `run` as an explicit batch term would subtract the entire L1
+# stage effect. RUVs never sees `run`: with anchor_groups null it groups
+# replicates by `condition` (= genotype_stage, see bin/ruvseq.R:78), centres
+# within each group, and estimates W from the residuals. Between-group
+# differences never enter the residual matrix, so the L1-vs-adult biology
+# cannot be removed - and by the same token a run-level offset cannot be
+# removed either. This cleans within-group replicate noise only.
+#
+# The PC1 loadings from the uncorrected run support treating the L1 axis as
+# biology: the adult side is a germline programme (28 major sperm protein
+# genes, perm-2/4, memi-3, egg-3, mei-2) and the L1 side is cuticle/molting
+# collagens plus GSTs. That is development, not a batch signature.
+#
+# CHECK AFTER RUNNING: ruv_diagnostics.tsv reports R^2 of each W against
+# condition. W_1 should have LOW R^2 - a high value means W_1 has aligned with
+# the between-condition (i.e. L1-vs-adult) axis and the corrected VST is
+# eating real biology. If that happens, prefer the *_raw.pdf plots.
+#
+# Both are written regardless: pca_<col>.pdf is RUV-corrected,
+# pca_<col>_raw.pdf is uncorrected, so they can be compared side by side.
+#
+# Usage: bash run.sh --params samples/pca-hlh30-all-ruv.yaml --profile aws
+
+id: pca-hlh30-all-ruv
+input: samples/hlh30-all_samplesheet.yaml
+
+skip_clustering: true
+skip_enrichment: false      # see note above - required for RUVSEQ to run
+
+organism:
+  genome: WBcel235
+  gtf: "s3://celegans-pipeline-rayandrew/refs/Caenorhabditis_elegans.WBcel235.115.gtf"
+  ensembl_release: 115
+  kegg_org: "cel"
+  org_db: "org.Ce.eg.db"
+  biomart_dataset: "celegans_gene_ensembl"
+  gene_db: "s3://celegans-pipeline-rayandrew/refs/gene_db.sqlite"
+
+deseq2:
+  padj_threshold: 0.05
+  lfc_threshold: 1.0
+  shrinkage: "apeglm"
+  condition_from: "genotype_stage"
+  reference: "WT_L1"
+  batch: replicate
+
+ruvseq:
+  enabled: true
+  method: "RUVs"
+  k: 1
+  anchor_groups: null       # -> groups replicates by genotype_stage
+
+groups:
+  all:
+    genotype: ["WT", "tm1978"]
+    stage: ["L1", "L4", "Day3", "Day6"]
+
+clustering:
+  num_clusters: "auto"
+  sort_by: "pvalue"
+  correct_vst: true         # applies limma::removeBatchEffect(batch=replicate,
+                            # covariates=W_1) to the VST used by EXPLORATION
+  condition_order: "WT_L1,WT_L4,WT_Day3,WT_Day6,tm1978_L1,tm1978_L4,tm1978_Day3,tm1978_Day6"
+
+exploration:
+  pca_color_by: ["genotype", "stage", "run", "replicate", "temperature"]
+
+outdir: "s3://celegans-pipeline-rayandrew/results"

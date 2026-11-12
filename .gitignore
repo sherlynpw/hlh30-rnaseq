@@ -1,0 +1,39 @@
+# Nextflow
+.nextflow/
+.nextflow.log*
+work/
+results/
+rnaseq_output/
+refs/
+.nf-test/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Data (symlinked BAMs, large files)
+data/
+*.sqlite
+test_*.featureCounts.*
+tests/data/
+tests/results/
+
+# Caches
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/
+
+# Plans (local docs)
+docs/
+/.nextflow_tmp/
+rnaseq_staging/

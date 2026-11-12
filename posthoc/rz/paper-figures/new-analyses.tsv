@@ -1,0 +1,20 @@
+# New analyses, paper versions: the figure alone (no title, notes or caption),
+# 10pt at full (7.09 in), half (3.75 in) or one third (2.5 in) of the page. Staged into out/, next to the panels, by
+# `make new` and synced with the panels by `make upload`.
+# Names follow the supplementary figure numbers of the 8 Nov manuscript (S7 autophagy, S8 lysosome, S9 binding, S10 SEA, S11 published lists); 07 is not a figure.
+# name <TAB> source (relative to posthoc/rz) <TAB> note
+# The matching .png is copied too when it exists.
+fig-s7a	hlh30-integration/out/published/paper/04a-autophagy-hlh30-linked.pdf	hlh-30-linked autophagy genes (21), half page (Rscript published-overlap.R --paper)
+fig-s7a_evidence	hlh30-integration/published/new_autophagy/hlh30_autophagy_evidence.tsv	per-gene literature evidence behind S7A (Supplementary File 5)
+fig-s7b	hlh30-integration/out/published/paper/04b-autophagy-core.pdf	all core autophagy genes (69), half page (Rscript published-overlap.R --paper)
+fig-s8a	hlh30-integration/out/published/paper/04c-lysosome-hlh30-linked.pdf	hlh-30-linked genes of the Sun et al. 2020 lysosome list (27) (Rscript published-overlap.R --paper)
+fig-s8b	hlh30-integration/out/published/paper/04d-lysosome-core.pdf	all 85 lysosome genes of Sun et al. 2020 eLife (Rscript published-overlap.R --paper)
+fig-s8b_genes	hlh30-integration/published/new_lysosome/sun2020_lysosome_genes.tsv	the 85 genes of Sun et al. 2020 Supplementary file 1 with WBGene IDs
+fig-s9a	hlh30-integration/out/bound/paper/02a-bound-vs-deg.pdf	HLH-30 ChIP-bound share of DEGs per stage, half page (Rscript bound-vs-dge.R --paper)
+fig-s9b	hlh30-integration/out/bound/paper/02b-bound-share-pairwise.pdf	stage-vs-stage difference in bound share, 2.1 in (narrower than one third) (Rscript bound-vs-dge.R --paper)
+fig-s9b_pairwise	hlh30-integration/out/bound/pairwise_bound_share.tsv	pairwise exact tests for overlapping DEG lists (plus a Fisher check on stage-specific genes)
+fig-s10	hlh30-integration/out/sea/paper/01-sea-motif-grid.pdf	SEA motif enrichment in promoters of hlh-30 DEGs (Rscript sea-plot.R --paper)
+fig-s10_significant	hlh30-integration/out/sea/sea_significant.tsv	every SEA hit with q < 0.05
+fig-s11	hlh30-integration/out/published/paper/03-published-lists.pdf	our DEGs vs published HLH-30 gene lists (Rscript published-overlap.R --paper)
+fig-s11_table	hlh30-integration/out/published/published_overlap.tsv	every cell of S11
+07-opposite-genes	fc-quadrant/out/opposite_genes.csv	genes DE in both genotypes with opposite signs, per transition (the rings in the quadrant plots)

@@ -1,0 +1,75 @@
+# Stage labels are the short forms L1/L4/D3/D6 everywhere (--short-stages); L4 is
+# the ChIP / Day 0 stage (was shown as D0 until the advisor asked for L4).
+# Placed widths are measured from the author's Figures082826.pdf by image
+# position on the page (pdfimages lists images in file order, not panel
+# order). Every panel is rendered on its script's original canvas with the
+# type scaled so the main labels print at 10pt at that width.
+# panel	source (relative to posthoc/rz)	placed size (in)	note
+fig-1b	pca-stage/out/VZRJXQ-ruv-rbe/pca_stage.pdf	3.75	PCA by stage; half page (10/03 draft), FONT_SCALE=2.0833
+fig-1c	sample-corr-heatmap/out/VZRJXQ-ruv-rbe/corr_corrected_pearson.pdf	3.75	sample corr, RUV-corrected VST; half page (10/03 draft), laid out 1:1 in points
+fig-1d	pca-genotype/out/VZRJXQ_no_l4-ruv-rbe/pca_genotype.pdf	3.75	PCA by genotype x stage, no L4; half page (10/03 draft)
+fig-1e-day0	volcano/out/VZRJXQ-ruv-rbe/volcano_L4.pdf	2.50	WT vs tm1978 at L4, L4+D3+D6 model; no cap, counts beside the stage name; one third of the page (10/03 draft)
+fig-1e-day3	volcano/out/VZRJXQ-ruv-rbe/volcano_Day3.pdf	2.50	WT vs tm1978 at Day 3; no cap, counts beside the stage name; one third of the page (10/03 draft)
+fig-1e-day6	volcano/out/VZRJXQ-ruv-rbe/volcano_Day6.pdf	2.50	WT vs tm1978 at Day 6; no cap, counts beside the stage name; one third of the page (10/03 draft)
+# GO dot plots. Labels in targets-paper-figures.tsv were renamed to the
+# current figure numbers (they predated the inserted microscopy figure).
+fig-3c	go-plot/out-paper/VZRJXQ-ruv-rbe/[Fig 3C] GO-BP kmeans cluster 1.pdf	3.75	GO-BP kmeans cluster 1; half page
+fig-3d	go-plot/out-paper/VZRJXQ-ruv-rbe/[Fig 3D] GO-CC kmeans cluster 1.pdf	3.75	GO-CC kmeans cluster 1; half page
+fig-3g	go-plot/out-paper/VZRJXQ_no_l4-ruv-rbe/[Fig 3G] GO-BP kmeans cluster 2.pdf	3.75	GO-BP kmeans cluster 2 (k=4); half page
+fig-3h	go-plot/out-paper/VZRJXQ_no_l4-ruv-rbe/[Fig 3H] GO-BP kmeans cluster 3.pdf	3.75	GO-BP kmeans cluster 3 (k=4); half page
+fig-4b	go-plot/out-paper/compare_DE/[Fig 4B] GO-CC L4-to-D3 exclusive-down WT.pdf	3.75	GO-CC L4->D3 excl-down WT; half page
+fig-4c	go-plot/out-paper/compare_DE/[Fig 4C] GO-CC L4-to-D3 exclusive-down hlh-30.pdf	3.75	GO-CC L4->D3 excl-down hlh-30; half page
+fig-4e	go-plot/out-paper/compare_DE/[Fig 4E] GO-BP L4-to-D6 exclusive-up hlh-30.pdf	3.75	GO-BP L4->D6 excl-up hlh-30; half page
+fig-4f	go-plot/out-paper/compare_DE/[Fig 4F] GO-CC L4-to-D6 exclusive-down hlh-30.pdf	3.75	GO-CC L4->D6 excl-down hlh-30; half page
+fig-4h	go-plot/out-paper/compare_DE/[Fig 4H] GO-CC D3-to-D6 exclusive-down hlh-30.pdf	3.75	GO-CC D3->D6 excl-down hlh-30; half page
+fig-4i	go-plot/out-paper/compare_DE/[Fig 4I] GO-CC D3-to-D6 exclusive-up WT.pdf	3.75	GO-CC D3->D6 excl-up WT; half page
+fig-s2a	go-plot/out-paper/compare_DE/[Fig S2A] GO-BP L4-to-D3 exclusive-up WT.pdf	3.75	GO-BP L4->D3 excl-up WT; half page
+fig-s2b	go-plot/out-paper/compare_DE/[Fig S2B] GO-BP L4-to-D3 exclusive-down WT.pdf	3.75	GO-BP L4->D3 excl-down WT; half page
+fig-s2c	go-plot/out-paper/compare_DE/[Fig S2C] GO-BP L4-to-D6 exclusive-down hlh-30.pdf	3.75	GO-BP L4->D6 excl-down hlh-30; half page
+fig-s2d	go-plot/out-paper/compare_DE/[Fig S2D] GO-BP L4-to-D6 exclusive-up WT.pdf	3.75	GO-BP L4->D6 excl-up WT; half page
+fig-s2e	go-plot/out-paper/compare_DE/[Fig S2E] GO-BP D3-to-D6 exclusive-down WT.pdf	3.75	GO-BP D3->D6 excl-down WT; half page
+fig-s2f	go-plot/out-paper/hlh30-all-ruv/[Fig S2F] GO-BP kmeans cluster 3.pdf	3.75	GO-BP kmeans cluster 3 of hlh30-all-ruv; half page
+# Fold-change quadrant plots (the Venns were dropped, 10/2026)
+fig-4a	fc-quadrant/out/quadrant_B_l4_d3.pdf	3.75	fold-change quadrant plot, L4 -> D3 (replaces the Venn); half page
+fig-4d	fc-quadrant/out/quadrant_C_l4_d6.pdf	3.75	fold-change quadrant plot, L4 -> D6 (replaces the Venn); half page
+fig-4g	fc-quadrant/out/quadrant_D_d3_d6.pdf	3.75	fold-change quadrant plot, D3 -> D6 (replaces the Venn); half page
+fig-9i	fc-quadrant/out/third/quadrant_A_l1_l4.pdf	2.50	fold-change quadrant plot, L1 -> L4 (replaces the Venn); one third of the page
+# Fig 9 GO panels (L1 -> L4 compare-DE of hlh30-all-ruv).
+fig-9e	go-plot/out-paper/compare_DE/[Fig 9E] GO-BP L1 WT-vs-hlh-30 down.pdf	2.50	GO-BP L1 DEGs down in hlh-30; one third of the page
+fig-9f	go-plot/out-paper/compare_DE/[Fig 9F] GO-BP L1 WT-vs-hlh-30 up.pdf	2.50	GO-BP L1 DEGs up in hlh-30; one third of the page
+fig-9j	go-plot/out-paper/compare_DE/[Fig 9J] GO-BP L1-to-L4 up-more-in-WT.pdf	2.50	GO-BP L1->L4, genes up more in WT or up in WT and down in hlh-30; one third of the page
+fig-9k	go-plot/out-paper/compare_DE/[Fig 9K] GO-CC L1-to-L4 up-more-in-WT.pdf	2.50	GO-CC L1->L4, genes up more in WT or up in WT and down in hlh-30; one third of the page
+fig-9l	go-plot/out-paper/compare_DE/[Fig 9L] GO-BP L1-to-D0 exclusive-down hlh-30.pdf	2.50	GO-BP L1->L4 excl-down hlh-30; one third of the page
+fig-9m	go-plot/out-paper/compare_DE/[Fig 9M] GO-CC L1-to-D0 exclusive-up WT.pdf	2.50	GO-CC L1->L4 excl-up WT; one third of the page
+# Fig 3 / Fig 9 panels. Each rendered on its ORIGINAL canvas with a
+# per-panel --font-scale chosen for 10pt printed at its placed size.
+fig-3b	cluster-profiles/out/VZRJXQ-ruv-rbe/cluster_profiles.pdf	4.40	k-means cluster profiles, k=6 (L4/D3/D6) (author placed 4.41)
+fig-3f	cluster-profiles/out/VZRJXQ_no_l4-ruv-rbe/cluster_profiles.pdf	4.40	k-means cluster profiles, k=4 (D3/D6) (author placed 4.48)
+fig-9a	pca-stage/out/pca-hlh30-all-ruv/pca_stage.pdf	2.50	PCA all stages incl L1; one third of the page (10/03 draft), legend below
+fig-9b	pca-l1/out/pca_l1_genotype.pdf	2.50	PCA L1 only; colour = stage (L1 green), shape = genotype; one third of the page (10/03 draft), legend below
+fig-9c	sample-corr-heatmap/out/pca-hlh30-all-ruv/corr_corrected_pearson.pdf	3.57	sample corr, 8 conditions incl L1 (author placed 2.84 wide; 10pt labels need 3.57, colour bar now under the row labels)
+fig-9d	volcano/out/hlh30-all-ruv/volcano_L1.pdf	2.50	WT vs tm1978 at L1; one third of the page (10/03 draft); no cap, counts beside the stage name
+fig-9h	cluster-profiles/out/hlh30-all-ruv/cluster_profiles.pdf	5.00	cluster profiles incl L1 (short stage labels); two thirds of the page (10/03 draft)
+# Fig 8 / S3 / S5 panels. 8D / 8E were 8G / 8H before the 10/03 layout.
+fig-8d	chip-tracks/out/promoter_schematic.pdf	5.79	tts-1 / ztf-28 promoter schematic
+fig-8e	chip-tracks/out/motif_counts.pdf	4.10	TF motif counts in promoters
+fig-s3a	germ-trajectory/out-s3a/germ_heatmap.pdf	3.50	oocyte and germline gene heatmap (left of the pair)
+fig-s3b	germ-trajectory/out-s3a/sperm_heatmap.pdf	3.50	sperm gene heatmap (right of the pair)
+fig-s3c	germ-trajectory/out-s3b/germ_meanline.pdf	3.50	oocyte and germline gene set mean trajectory
+fig-s3d	germ-trajectory/out-s3c/sperm_meanline.pdf	3.50	sperm gene set mean trajectory (pair with S3C)
+fig-s5c	motif-targets/out/hlh30-all-ruv/targets_dumbbell.pdf	5.00	canonical HLH-30 E-box (JASPAR MA1449.1) in DEG promoters; two thirds of the page (draft 4.79 in)
+# fig-s5b: Lin et al. 2018 Fig 5e layout, mean of the 4 experiments (the author's choice).
+# fig-s5b-lanes: same loci, one lane per experiment. Both are rendered with --genes "ztf-28,tts-1,cpr-4" (the script default
+# adds lgg-2, which gave 4 loci and an over-wide panel).
+fig-s5a	chip-tracks/out/panelA_metagene.pdf	4.24	HLH-30 ChIP metaprofile around TSS
+# UMAP panels: recomputed posthoc with the pipeline's seed (42) and
+# preprocessing; gene counts verified against the published cluster sizes.
+fig-3a	kmeans-umap/out/fig-3a/kmeans_umap.pdf	3.75	k-means UMAP k=6 (L4/D3/D6), seed 42; half page (10/03 draft)
+fig-3e	kmeans-umap/out/fig-3e/kmeans_umap.pdf	3.75	k-means UMAP k=4 (D3/D6), seed 42; half page (10/03 draft)
+fig-9g	kmeans-umap/out/fig-9g/kmeans_umap.pdf	2.50	k-means UMAP k=6 incl L1, seed 42; one third of the page (10/03 draft)
+fig-s1b	kmeans-umap/out/fig-s1b/hdbscan_umap.pdf	4.83	HDBSCAN UMAP, 7 clusters + noise, seed 42; as placed in the 10/03 draft
+fig-s1c	pca-genotype/out/VZRJXQ_no_l4-ruv-rbe/pca_cohort.pdf	3.75	the fig 1D PCA coloured by adult cohort (20 C or 22 C); half page, proposed 2026-11-11
+fig-s5b	chip-tracks/out/panelE_lin_style.pdf	7.09	ChIP tracks, Lin-style: mean of 4 HLH-30 experiments per locus
+fig-s5b-lanes	chip-tracks/out/panelE_tracks.pdf	7.09	ChIP tracks at ztf-28 / tts-1 / cpr-4, one lane per experiment (alternative to s5b; width ASSUMED)
+fig-1f	gene-lists/out/fig-1f.pdf	4.20	DEGs at L4, D3 and D6 (was hand-drawn by the author)
+fig-s1a	gene-lists/out/fig-s1a.pdf	4.20	DEGs at D3 and D6, not L4 (was hand-drawn by the author)

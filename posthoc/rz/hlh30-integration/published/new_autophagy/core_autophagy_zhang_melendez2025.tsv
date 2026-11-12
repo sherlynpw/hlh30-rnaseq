@@ -1,0 +1,72 @@
+gene_id	gene_name	source_gene	category	role_class	yeast_homolog	mammalian_homolog	in_zhang2015_table1	map_method
+WBGene00006786	unc-51	unc-51	Atg1/ULK complex	core_machinery	atg1	ULK1/ULK2	True	gene_name
+WBGene00017045	atg-13	epg-1	Atg1/ULK complex	core_machinery	atg13	ATG13	True	other_names
+WBGene00020334	epg-7	epg-7	Atg1/ULK complex	core_machinery	atg17	FIP200/RB1CC1	True	gene_name
+WBGene00022078	epg-9	epg-9	Atg1/ULK complex	core_machinery		ATG101	True	gene_name
+WBGene00000247	bec-1	bec-1	Class III (PI(3)K) Vps34 complex	core_machinery	atg6/vps30	BECN1	True	gene_name
+WBGene00006932	vps-34	vps-34	Class III (PI(3)K) Vps34 complex	core_machinery	vps34	PIK3C3/VPS34	True	gene_name
+WBGene00014151	vps-15	vps-15	Class III (PI(3)K) Vps34 complex	core_machinery	vps15	PIK3R4/VPS15	False	gene_name
+WBGene00013695	epg-8	epg-8	Class III (PI(3)K) Vps34 complex	core_machinery	atg14	ATG14L	True	gene_name
+WBGene00018294	atg-18	atg-18	PI3P binding complex	core_machinery	atg18	WIPI1, WIPI2, WIPI3, WIPI4	True	gene_name
+WBGene00012641	epg-6	epg-6	PI3P binding complex	core_machinery	atg18	WIPI1, WIPI2, WIPI3, WIPI4	True	gene_name
+WBGene00019748	atg-2	atg-2	PI3P binding complex	core_machinery	atg2	ATG2A, ATG2B	True	gene_name
+WBGene00020706	atg-9	atg-9	PI3P binding complex	core_machinery	atg9	ATG9A, ATG9B	True	gene_name
+WBGene00013595	atg-4.1	atg-4.1	Atg8 ubiquitin-like conjugation system	core_machinery	atg4	ATG4A, ATG4B, ATG4C, ATG4D	True	gene_name
+WBGene00014080	atg-4.2	atg-4.2	Atg8 ubiquitin-like conjugation system	core_machinery	atg4	ATG4A, ATG4B, ATG4C, ATG4D	True	gene_name
+WBGene00021922	atg-3	atg-3	Atg8 ubiquitin-like conjugation system	core_machinery	atg3	ATG3	True	gene_name
+WBGene00010882	atg-7	atg-7	Atg8 ubiquitin-like conjugation system	core_machinery	atg7	ATG7	True	gene_name
+WBGene00002980	lgg-1	lgg-1	Atg8 ubiquitin-like conjugation system	core_machinery	atg8	LC3A, LC3B, LC3C, GABARAP, GABARAPL1, GABARAPL2	True	gene_name
+WBGene00002981	lgg-2	lgg-2	Atg8 ubiquitin-like conjugation system	core_machinery	atg8	LC3A, LC3B, LC3C, GABARAP, GABARAPL1, GABARAPL2	True	gene_name
+WBGene00022152	atg-5	atg-5	Atg12 ubiquitin-like conjugation system	core_machinery	atg5	ATG5	True	gene_name
+WBGene00010882	atg-7	atg-7	Atg12 ubiquitin-like conjugation system	core_machinery	atg7	ATG7	True	gene_name
+WBGene00008427	atg-10	atg-10	Atg12 ubiquitin-like conjugation system	core_machinery	atg10	ATG10	True	gene_name
+WBGene00002982	lgg-3	lgg-3	Atg12 ubiquitin-like conjugation system	core_machinery	atg12	ATG12	True	gene_name
+WBGene00017178	atg-16.1	atg-16.1	Atg12 ubiquitin-like conjugation system	core_machinery	atg16	ATG16L1, ATG16L2	True	gene_name
+WBGene00019427	atg-16.2	atg-16.2	Atg12 ubiquitin-like conjugation system	core_machinery	atg16	ATG16L1, ATG16L2	True	gene_name
+WBGene00003476	mtm-3	mtm-3	Autophagosome maturation	maturation_fusion		MTMR3	False	gene_name
+WBGene00016968	epg-5	epg-5	Autophagosome maturation	maturation_fusion		mEPG5	True	gene_name
+WBGene00012150	syx-17	syx-17	Autophagosome maturation	maturation_fusion	vam3	STX17	False	gene_name
+WBGene00019305	snap-29	snap-29	Autophagosome maturation	maturation_fusion		SNAP29	False	gene_name
+WBGene00003858	ogt-1	ogt-1	Autophagosome maturation	maturation_fusion		OGT	False	gene_name
+WBGene00022077	vamp-7	vamp-7	Autophagosome maturation	maturation_fusion		VAMP8	False	gene_name
+WBGene00004271	rab-7	rab-7	Autophagosome maturation	maturation_fusion	ypt7	RAB7A	False	gene_name
+WBGene00013302	vti-1	vti-1	Autophagosome maturation	maturation_fusion	vti1	VTI1a, VT1b	False	gene_name
+WBGene00013093	cup-14	cup-14	Autophagosome maturation	maturation_fusion		PLEKHM1	False	gene_name
+WBGene00021468	epg-2	epg-2	Autophagy-related	autophagy_related_or_regulator			True	gene_name
+WBGene00012559	epg-3	epg-3	Autophagy-related	autophagy_related_or_regulator		VMP1	True	gene_name
+WBGene00018150	epg-4	epg-4	Autophagy-related	autophagy_related_or_regulator		EI24	True	gene_name
+WBGene00010872	plag-15	lpla-2	Autophagy-related	autophagy_related_or_regulator		PLA2G15	False	other_names
+WBGene00010808	sepa-1	sepa-1	Autophagy-related	autophagy_related_or_regulator			False	gene_name
+WBGene00013235	Y56A3A.16	rub-1	Autophagy-related	autophagy_related_or_regulator		RUBCN/RUBICON	False	alias
+WBGene00000911	daf-15	daf-15	Autophagy-related	autophagy_related_or_regulator	kog1	RPTOR	False	gene_name
+WBGene00009245	rict-1	rict-1	Autophagy-related	autophagy_related_or_regulator	tsc11	RICTOR	False	gene_name
+WBGene00010038	rheb-1	rheb-1	Autophagy-related	autophagy_related_or_regulator	rhb1	RHEB	False	gene_name
+WBGene00000423	ced-9	ced-9	Autophagy-related	autophagy_related_or_regulator		BCL2	False	gene_name
+WBGene00021334	vps-4	vps-4	Autophagy-related	autophagy_related_or_regulator	vps4	VPS4A, VPS4B, SKD1	False	gene_name
+WBGene00004274	rab-11.1	rab-11.1	Autophagy-related	autophagy_related_or_regulator	ypt31, ypt32	RAB-11A	False	gene_name
+WBGene00004275	rab-11.2	rab-11.2	Autophagy-related	autophagy_related_or_regulator	ypt31, ypt32	RAB-11A	False	gene_name
+WBGene00002026	hsp-70	hsp-70	Autophagy-related	autophagy_related_or_regulator	ssa1-4	HSPA8/HSC70	False	gene_name
+WBGene00000915	hsp-90	daf-21	Autophagy-related	autophagy_related_or_regulator	hsc82, hsp82	HSP90AA1	False	other_names
+WBGene00011972	T23G11.7	T23G11.7	Autophagy-related	autophagy_related_or_regulator	vps38	UVRAG	False	gene_name
+WBGene00021319	Y34B4A.2	Y34BA.2	Autophagy-related	autophagy_related_or_regulator	vps38	UVRAG	False	alias
+WBGene00002583	let-363	let-363	Regulate autophagy gene expression	transcriptional_regulator	TOR1, TOR2	MTOR	False	gene_name
+WBGene00020930	hlh-30	hlh-30	Regulate autophagy gene expression	transcriptional_regulator		TFEB, TFE3	False	gene_name
+WBGene00000912	daf-16	daf-16	Regulate autophagy gene expression	transcriptional_regulator		FOXO	False	gene_name
+WBGene00004013	pha-4	pha-4	Regulate autophagy gene expression	transcriptional_regulator		FOXA	False	gene_name
+WBGene00014081	ipmk-1	impk-1	Regulate autophagy gene expression	transcriptional_regulator	impk	IMPK	False	alias
+WBGene00011737	sqst-1	sqst-1	Selective autophagy receptor for ubiquitinated cargo	selective_autophagy		SQST-1/p62	False	gene_name
+WBGene00003967	pdr-1	pdr-1	Selective autophagy– mitophagy	selective_autophagy		PRKN	False	gene_name
+WBGene00017137	pink-1	pink-1	Selective autophagy– mitophagy	selective_autophagy		PINK1	False	gene_name
+WBGene00015776	dct-1	dct-1	Selective autophagy– mitophagy	selective_autophagy		BNIP3	False	gene_name
+WBGene00011528	fndc-1	fundc-1	Selective autophagy– allophagy	selective_autophagy		FUNDC1A	False	alias
+WBGene00004015	phb-2	phb-2	Selective autophagy– allophagy	selective_autophagy	phb2	PHB2	False	gene_name
+WBGene00011292	allo-1	allo-1a	Selective autophagy– allophagy	selective_autophagy			False	alias
+WBGene00011292	allo-1	allo-1b	Selective autophagy– allophagy	selective_autophagy			False	alias
+WBGene00011299	ikke-1	ikke-1	Selective autophagy– allophagy	selective_autophagy	cak1	TBK1	False	gene_name
+WBGene00011067	vps-11	vps-11	HOPS complex, for vesicle fusion	maturation_fusion	vps11	VPS11	False	gene_name
+WBGene00021058	vps-18	vps-18	HOPS complex, for vesicle fusion	maturation_fusion	vps18	VPS18	False	gene_name
+WBGene00011625	vps-39	vps-39	HOPS complex, for vesicle fusion	maturation_fusion	vam6/vps39	VPS39	False	gene_name
+WBGene00017974	vps-41	vps-41	HOPS complex, for vesicle fusion	maturation_fusion	vam2/vps41	VPS41	False	gene_name
+WBGene00006516	vps-16	vps-16	HOPS complex, for vesicle fusion	maturation_fusion	vps16	VPS16	False	gene_name
+WBGene00015130	vps-33.1	vps-33.1	HOPS complex, for vesicle fusion	maturation_fusion	vps33	VPS33A, VPS33B	False	gene_name
+WBGene00016960	vps-33.2	vps-33.2	HOPS complex, for vesicle fusion	maturation_fusion	vps33	VPS33A, VPS33B	False	gene_name

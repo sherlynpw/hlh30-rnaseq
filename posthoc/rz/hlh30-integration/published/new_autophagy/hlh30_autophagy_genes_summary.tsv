@@ -1,0 +1,66 @@
+gene_id	gene_name	source_gene	gene_class	n_papers_expr_reduced_hlh30	papers_expr_reduced_hlh30	n_papers_induced_hlh30_oe	papers_induced_hlh30_oe	n_papers_chip_binding	papers_chip_binding	n_papers_motif_only	papers_motif_only	papers_not_dependent	strongest_evidence	n_papers_functional	in_core_list	in_go0006914	map_method
+WBGene00002980	lgg-1	lgg-1	core_machinery	9	Bennett 2017 PLoS Genet; Chen 2017 Autophagy; Franco-Juarez 2018 Aging (Albany NY); Kumar 2022 Sci Adv; Kumsta 2017 Nat Commun; Lapierre 2013 Nat Commun; Nakamura 2016 Nat Commun; O'Rourke 2013 Nat Cell Biol; Visvikis 2014 Immunity	0		0		2	Chen 2017 Autophagy; Lapierre 2013 Nat Commun	Dinic 2021 Aging; Murphy 2019 PLoS Biol	expr_reduced_hlh30	9	True	True	gene_name
+WBGene00000781	cpr-1	cpr-1	lysosome_or_other	6	Chamoli 2023 Nat Aging; Lapierre 2013 Nat Commun; Metcalf 2024 iScience; Murphy 2019 PLoS Biol; Nakamura 2016 Nat Commun; Visvikis 2014 Immunity	2	Lapierre 2013 Nat Commun; Lin 2024 Front Pharmacol	0		2	Imanikia 2019 Curr Biol; Lapierre 2013 Nat Commun		expr_reduced_hlh30	7	False	False	gene_name
+WBGene00018294	atg-18	atg-18	core_machinery	6	Chen 2017 Autophagy; Dinic 2021 Aging; Kumsta 2017 Nat Commun; Lapierre 2013 Nat Commun; Murphy 2019 PLoS Biol; Possik 2023 Nat Commun	0		0		2	Chen 2017 Autophagy; Lapierre 2013 Nat Commun		expr_reduced_hlh30	6	True	True	gene_name
+WBGene00002981	lgg-2	lgg-2	core_machinery	5	Chen 2017 Autophagy; Nakamura 2016 Nat Commun; O'Rourke 2013 Nat Cell Biol; Possik 2023 Nat Commun; Visvikis 2014 Immunity	0		0		1	Chen 2017 Autophagy	Nakamura 2016 Nat Commun	expr_reduced_hlh30	5	True	True	gene_name
+WBGene00003053	lmp-1	lmp-1	lysosome_or_other	5	Bennett 2017 PLoS Genet; Chamoli 2023 Nat Aging; Franco-Juarez 2018 Aging (Albany NY); Lapierre 2013 Nat Commun; Murphy 2019 PLoS Biol	0		0		1	Lapierre 2013 Nat Commun		expr_reduced_hlh30	5	False	False	gene_name
+WBGene00020706	atg-9	atg-9	core_machinery	4	Chen 2017 Autophagy; Lapierre 2013 Nat Commun; Murphy 2019 PLoS Biol; O'Rourke 2013 Nat Cell Biol	0		0		1	Lapierre 2013 Nat Commun		expr_reduced_hlh30	4	True	True	gene_name
+WBGene00010062	lipl-1	lipl-1	lysosome_or_other	4	Dinic 2021 Aging; Imanikia 2019 Curr Biol; Metcalf 2024 iScience; O'Rourke 2013 Nat Cell Biol	1	O'Rourke 2013 Nat Cell Biol	1	O'Rourke 2013 Nat Cell Biol	0			chip_binding	4	False	False	gene_name
+WBGene00006786	unc-51	unc-51	core_machinery	4	Dinic 2021 Aging; Franco-Juarez 2018 Aging (Albany NY); O'Rourke 2013 Nat Cell Biol; Visvikis 2014 Immunity	0		0		0			expr_reduced_hlh30	4	True	True	gene_name
+WBGene00000214	asp-1	asp-1	lysosome_or_other	3	Lapierre 2013 Nat Commun; Metcalf 2024 iScience; Murphy 2019 PLoS Biol	1	Lapierre 2013 Nat Commun	0		0			expr_reduced_hlh30	3	False	False	gene_name
+WBGene00019748	atg-2	atg-2	core_machinery	3	Chen 2017 Autophagy; Nakamura 2016 Nat Commun; Visvikis 2014 Immunity	1	Visvikis 2014 Immunity	0		0			expr_reduced_hlh30	3	True	True	gene_name
+WBGene00020507	vha-15	vha-15	lysosome_or_other	3	Chamoli 2023 Nat Aging; Lapierre 2013 Nat Commun; Murphy 2019 PLoS Biol	0		0		1	Lapierre 2013 Nat Commun		expr_reduced_hlh30	3	False	False	gene_name
+WBGene00017045	atg-13	atg-13	core_machinery	2	O'Rourke 2013 Nat Cell Biol; Visvikis 2014 Immunity	1	Visvikis 2014 Immunity	0		0			expr_reduced_hlh30	2	True	True	gene_name
+WBGene00019427	atg-16.2	atg-16.2	core_machinery	2	O'Rourke 2013 Nat Cell Biol; Visvikis 2014 Immunity	1	Visvikis 2014 Immunity	0		0			expr_reduced_hlh30	2	True	True	gene_name
+WBGene00010882	atg-7	atg-7	core_machinery	2	Dinic 2021 Aging; O'Rourke 2013 Nat Cell Biol	0		0		0			expr_reduced_hlh30	2	True	True	gene_name
+WBGene00000247	bec-1	bec-1	core_machinery	2	Dinic 2021 Aging; Kumsta 2017 Nat Commun	0		0		0		Murphy 2019 PLoS Biol	expr_reduced_hlh30	2	True	True	gene_name
+WBGene00009773	lipl-2	lipl-2	lysosome_or_other	2	Murphy 2019 PLoS Biol; O'Rourke 2013 Nat Cell Biol	0		0		0		Dinic 2021 Aging	expr_reduced_hlh30	2	False	False	gene_name
+WBGene00020016	lipl-3	lipl-3	lysosome_or_other	2	Dinic 2021 Aging; O'Rourke 2013 Nat Cell Biol	1	O'Rourke 2013 Nat Cell Biol	1	O'Rourke 2013 Nat Cell Biol	0			chip_binding	2	False	False	gene_name
+WBGene00022642	lipl-5	lipl-5	lysosome_or_other	2	Murphy 2019 PLoS Biol; O'Rourke 2013 Nat Cell Biol	0		0		1	Imanikia 2019 Curr Biol		expr_reduced_hlh30	2	False	False	gene_name
+WBGene00004271	rab-7	rab-7	maturation_fusion	2	Lin 2024 Front Pharmacol; Zhong 2025 PLoS Biol	0		0		1	Zhong 2025 PLoS Biol		expr_reduced_hlh30	2	True	False	gene_name
+WBGene00011737	sqst-1	sqst-1	selective_autophagy	2	Bennett 2017 PLoS Genet; Lapierre 2013 Nat Commun	1	Lapierre 2013 Nat Commun	0		1	Lapierre 2013 Nat Commun	Kumsta 2017 Nat Commun	expr_reduced_hlh30	2	True	True	gene_name
+WBGene00006310	sul-3	sul-3	lysosome_or_other	2	Lapierre 2013 Nat Commun; Murphy 2019 PLoS Biol	0		0		1	Lapierre 2013 Nat Commun	Lapierre 2013 Nat Commun	expr_reduced_hlh30	2	False	False	gene_name
+WBGene00012150	syx-17	syx-17	maturation_fusion	2	Chen 2017 Autophagy; Lin 2024 Front Pharmacol	0		0		0			expr_reduced_hlh30	2	True	False	gene_name
+WBGene00016258	vha-16	vha-16	lysosome_or_other	2	Chamoli 2023 Nat Aging; Lapierre 2013 Nat Commun	0		0		0			expr_reduced_hlh30	2	False	False	gene_name
+WBGene00009882	vha-17	vha-17	lysosome_or_other	2	Bennett 2017 PLoS Genet; Lapierre 2013 Nat Commun	0		0		1	Lapierre 2013 Nat Commun		expr_reduced_hlh30	2	False	False	gene_name
+WBGene00021058	vps-18	vps-18	maturation_fusion	2	Chamoli 2023 Nat Aging; Lapierre 2013 Nat Commun	0		0		1	Lapierre 2013 Nat Commun		expr_reduced_hlh30	2	True	True	gene_name
+		ctsa	lysosome_or_other	1	Chamoli 2023 Nat Aging	0		0		0			expr_reduced_hlh30	1	False	False	unmapped
+WBGene00010769	asah-1	asah-1	lysosome_or_other	1	Metcalf 2024 iScience	0		0		1	Imanikia 2019 Curr Biol		expr_reduced_hlh30	1	False	False	gene_name
+WBGene00000211	asm-1	asm-1	lysosome_or_other	1	Visvikis 2014 Immunity	1	Visvikis 2014 Immunity	0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00000213	asm-3	asm-3	lysosome_or_other	1	Visvikis 2014 Immunity	1	Visvikis 2014 Immunity	0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00012683	asp-17	asp-17	lysosome_or_other	1	Metcalf 2024 iScience	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00000216	asp-3	asp-3	lysosome_or_other	1	Imanikia 2019 Curr Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00000219	asp-6	asp-6	lysosome_or_other	1	Metcalf 2024 iScience	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00008427	atg-10	atg-10	core_machinery	1	O'Rourke 2013 Nat Cell Biol	0		0		0			expr_reduced_hlh30	1	True	True	gene_name
+WBGene00017178	atg-16.1	atg-16.1	core_machinery	1	O'Rourke 2013 Nat Cell Biol	0		0		0			expr_reduced_hlh30	1	True	True	gene_name
+WBGene00021922	atg-3	atg-3	core_machinery	1	Chen 2017 Autophagy	0		0		0			expr_reduced_hlh30	1	True	True	gene_name
+WBGene00013595	atg-4.1	atg-4.1	core_machinery	1	Possik 2023 Nat Commun	0		0		0			expr_reduced_hlh30	1	True	True	gene_name
+WBGene00000412	cdr-1	cdr-1	lysosome_or_other	1	Imanikia 2019 Curr Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00010470	cdr-4	cdr-4	lysosome_or_other	1	Metcalf 2024 iScience	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00000782	cpr-2	cpr-2	lysosome_or_other	1	Visvikis 2014 Immunity	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00000785	cpr-5	cpr-5	lysosome_or_other	0		1	Lin 2024 Front Pharmacol	0		0		Li 2025 Nat Cell Biol	induced_hlh30_oe	1	False	False	gene_name
+WBGene00019617	ctsa-2	ctsa-2	lysosome_or_other	1	Metcalf 2024 iScience	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00007462	ctsa-3.2	ctsa*	lysosome_or_other	1	Lapierre 2013 Nat Commun	1	Lapierre 2013 Nat Commun	0		1	Lapierre 2013 Nat Commun	Lapierre 2013 Nat Commun	expr_reduced_hlh30	1	False	False	alias
+WBGene00012641	epg-6	epg-6	core_machinery	1	Chen 2017 Autophagy	0		0		0			expr_reduced_hlh30	1	True	True	gene_name
+WBGene00002982	lgg-3	lgg-3	core_machinery	1	Chen 2017 Autophagy	0		0		1	Chen 2017 Autophagy		expr_reduced_hlh30	1	True	True	gene_name
+WBGene00003828	nuc-1	nuc-1	lysosome_or_other	1	Visvikis 2014 Immunity	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00003996	pgp-2	pgp-2	lysosome_or_other	1	Franco-Juarez 2018 Aging (Albany NY)	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00006309	sul-2	sul-2	lysosome_or_other	1	Lapierre 2013 Nat Commun	0		0		1	Lapierre 2013 Nat Commun	Lapierre 2013 Nat Commun	expr_reduced_hlh30	1	False	False	gene_name
+WBGene00006611	tre-5	tre-5	lysosome_or_other	1	Visvikis 2014 Immunity	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00006920	vha-11	vha-11	lysosome_or_other	1	Murphy 2019 PLoS Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00006921	vha-12	vha-12	lysosome_or_other	1	Murphy 2019 PLoS Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00013025	vha-13	vha-13	lysosome_or_other	1	Murphy 2019 PLoS Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00010130	vha-14	vha-14	lysosome_or_other	1	Murphy 2019 PLoS Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00018698	vha-18	vha-18	lysosome_or_other	1	Imanikia 2019 Curr Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00021952	vha-19	vha-19	lysosome_or_other	1	Murphy 2019 PLoS Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00006911	vha-2	vha-2	lysosome_or_other	1	Murphy 2019 PLoS Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00006914	vha-5	vha-5	lysosome_or_other	0		1	Lin 2024 Front Pharmacol	0		0			induced_hlh30_oe	1	False	False	gene_name
+WBGene00006915	vha-6	vha-6	lysosome_or_other	0		1	Lin 2024 Front Pharmacol	0		0			induced_hlh30_oe	1	False	False	gene_name
+WBGene00006917	vha-8	vha-8	lysosome_or_other	1	Murphy 2019 PLoS Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00006918	vha-9	vha-9	lysosome_or_other	1	Murphy 2019 PLoS Biol	0		0		0			expr_reduced_hlh30	1	False	False	gene_name
+WBGene00011067	vps-11	vps-11	maturation_fusion	1	Lapierre 2013 Nat Commun	0		0		0		Murphy 2019 PLoS Biol	expr_reduced_hlh30	1	True	False	gene_name
+WBGene00010204	cpr-9	F57F5.1	lysosome_or_other	0		0		0		1	Imanikia 2019 Curr Biol		motif_only	0	False	False	sequence_name
+WBGene00015471	lmp-2	lmp-2	lysosome_or_other	0		0		0		1	Imanikia 2019 Curr Biol	Lin 2024 Front Pharmacol	motif_only	0	False	False	gene_name
+WBGene00003093	lys-4	lys-4	lysosome_or_other	0		0		0		1	Imanikia 2019 Curr Biol		motif_only	0	False	False	gene_name
+WBGene00004995	spp-10	spp-10	lysosome_or_other	0		0		0		1	Imanikia 2019 Curr Biol		motif_only	0	False	False	gene_name
+WBGene00006308	sul-1	sul-1	lysosome_or_other	0		0		0		1	Lapierre 2013 Nat Commun	Lapierre 2013 Nat Commun; Murphy 2019 PLoS Biol	motif_only	0	False	False	gene_name

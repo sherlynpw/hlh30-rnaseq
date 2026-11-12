@@ -1,0 +1,86 @@
+gene_id	gene_name	source_gene	category	description	map_method
+WBGene00013039	scav-3	scav-3	Lysosomal membrane proteins	ortholog of human CD36 antigen	gene_name
+WBGene00003053	lmp-1	lmp-1	Lysosomal membrane proteins	similar to vertebrate lysosome-associated membrane protein CD68	gene_name
+WBGene00015471	lmp-2	lmp-2	Lysosomal membrane proteins	orthologous to LAMP (lysosomal associated membrane glycoprotein)	gene_name
+WBGene00003561	ncr-1	ncr-1	Lysosomal membrane proteins	orthologous to human NPC1	gene_name
+WBGene00003562	ncr-2	ncr-2	Lysosomal membrane proteins	orthologous to human NPC1	gene_name
+WBGene00000846	cup-5	cup-5	Lysosomal membrane proteins	calcium transporter	gene_name
+WBGene00020837	slc-36.2	slc-36.2	Lysosomal membrane proteins	proton-coupled amino acid transporter	gene_name
+WBGene00021765	Y51F10.4	Y51F10.4	Lysosomal membrane proteins	amino acid transporter	gene_name
+WBGene00021546	laat-1	laat-1	Lysosomal membrane proteins	ortholog of human PQLC2	gene_name
+WBGene00008052	ctns-1	ctns-1	Lysosomal membrane proteins	lysosomal cystine transporter	gene_name
+WBGene00008774	F13H10.3	F13H10.3	Lysosomal membrane proteins	ortholog of human SLC38A9	gene_name
+WBGene00006910	vha-1	vha-1	V0 subunits	ortholog of subunit c of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00006911	vha-2	vha-2	V0 subunits	ortholog of subunit c of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00006912	vha-3	vha-3	V0 subunits	ortholog of subunit c of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00006913	vha-4	vha-4	V0 subunits	ortholog of subunit b of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00006914	vha-5	vha-5	V0 subunits	ortholog of subunit a of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00006915	vha-6	vha-6	V0 subunits	ortholog of subunit a of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00006916	vha-7	vha-7	V0 subunits	ortholog of subunit a of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00016258	vha-16	vha-16	V0 subunits	ortholog of subunit d of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00009882	vha-17	vha-17	V0 subunits	ortholog of subunit e of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00021952	vha-19	vha-19	V0 subunits	ortholog of subunit Ac45 of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00006768	unc-32	unc-32	V0 subunits	ortholog of subunit a of the membrane-bound (V0) domain of V-ATPase	gene_name
+WBGene00006917	vha-8	vha-8	V1 subunits	ortholog of subunit E of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00006918	vha-9	vha-9	V1 subunits	ortholog of subunit F of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00006919	vha-10	vha-10	V1 subunits	ortholog of subunit G of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00006920	vha-11	vha-11	V1 subunits	ortholog of subunit C of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00006921	vha-12	vha-12	V1 subunits	ortholog of subunit B of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00013025	vha-13	vha-13	V1 subunits	ortholog of subunit A of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00010130	vha-14	vha-14	V1 subunits	ortholog of subunit D of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00020507	vha-15	vha-15	V1 subunits	ortholog of subunit H of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00018698	vha-18	vha-18	V1 subunits	ortholog of subunit H of the cytoplasmic (V1) domain of V-ATPase	gene_name
+WBGene00007462	ctsa-3.2	ctsa-1	Protease (cathepsins)	ortholog of human CTSA (cathepsin A)	alias
+WBGene00021503	ctsa-4.2	Y40D12A.2	Protease (cathepsins)	ortholog of human CTSA (cathepsin A)	sequence_name
+WBGene00018271	ctsa-1.1	F41C3.5	Protease (cathepsins)	ortholog of human CTSA (cathepsin A)	sequence_name
+WBGene00019617	ctsa-2	K10C2.1	Protease (cathepsins)	ortholog of human CTSA (cathepsin A)	sequence_name
+WBGene00012445	Y16B4A.2	Y16B4A.2	Protease (cathepsins)	ortholog of human CTSA (cathepsin A)	gene_name
+WBGene00017969	ctsa-3.1	F32A5.3	Protease (cathepsins)	ortholog of human CTSA (cathepsin A)	sequence_name
+WBGene00019605	ctsa-4.1	K10B2.2	Protease (cathepsins)	ortholog of human CTSA (cathepsin A)	sequence_name
+WBGene00000214	asp-1	asp-1	Protease (cathepsins)	ortholog of cathepsin D aspartic protease	gene_name
+WBGene00000216	asp-3	asp-3	Protease (cathepsins)	ortholog of aspartyl protease	gene_name
+WBGene00000217	asp-4	asp-4	Protease (cathepsins)	ortholog of aspartyl protease	gene_name
+WBGene00019105	asp-8	asp-8	Protease (cathepsins)	ortholog of aspartyl protease	gene_name
+WBGene00017881	asp-13	asp-13	Protease (cathepsins)	ortholog of aspartyl protease	gene_name
+WBGene00000781	cpr-1	cpr-1	Protease (cathepsins)	ortholog of human CTSB (cathepsin B)	gene_name
+WBGene00000782	cpr-2	cpr-2	Protease (cathepsins)	ortholog of human CTSB (cathepsin B)	gene_name
+WBGene00000783	cpr-3	cpr-3	Protease (cathepsins)	ortholog of human CTSB (cathepsin B)	gene_name
+WBGene00000784	cpr-4	cpr-4	Protease (cathepsins)	ortholog of human CTSB (cathepsin B)	gene_name
+WBGene00000785	cpr-5	cpr-5	Protease (cathepsins)	ortholog of human CTSB (cathepsin B)	gene_name
+WBGene00000786	cpr-6	cpr-6	Protease (cathepsins)	ortholog of human CTSB (cathepsin B)	gene_name
+WBGene00021070	cpr-8	cpr-8	Protease (cathepsins)	ortholog of human CTSB (cathepsin B)	gene_name
+WBGene00012144	lgmn-1	T28H10.3	Protease (cathepsins)	ortholog of human CTSB (cathepsin B)	sequence_name
+WBGene00000776	cpl-1	cpl-1	Protease (cathepsins)	member of the cathepsin L-like cysteine protease family	gene_name
+WBGene00000788	cpz-1	cpz-1	Protease (cathepsins)	ortholog of cathepsin z-like cysteine protease	gene_name
+WBGene00007055	tag-196	tag-196	Protease (cathepsins)	ortholog of human CTSF	gene_name
+WBGene00008231	tag-329	tag-329	Protease (cathepsins)	ortholog of human CTSO	gene_name
+WBGene00012747	Y40H7A.10	Y40H7A.10	Protease (cathepsins)	ortholog of human CTSO	gene_name
+WBGene00008861	F15D4.4	F15D4.4	Protease (cathepsins)	cysteine-type peptidase	gene_name
+WBGene00000211	asm-1	asm-1	Non-protease hydrolases	sphingomyelin phosphodiesterase	gene_name
+WBGene00000212	asm-2	asm-2	Non-protease hydrolases	sphingomyelin phosphodiesterase	gene_name
+WBGene00000213	asm-3	asm-3	Non-protease hydrolases	sphingomyelin phosphodiesterase	gene_name
+WBGene00006308	sul-1	sul-1	Non-protease hydrolases	the sole C. elegans 6-O-endosulfatase	gene_name
+WBGene00006309	sul-2	sul-2	Non-protease hydrolases	orthologous to the human gene encoding arylsulfatase A	gene_name
+WBGene00006310	sul-3	sul-3	Non-protease hydrolases	orthologous to the human gene encoding arylsulfatase B	gene_name
+WBGene00020509	hex-1	hex-1	Non-protease hydrolases	a beta-N-acetylhexosaminidase	gene_name
+WBGene00015767	hex-2	hex-2	Non-protease hydrolases	a beta-N-acetylhexosaminidase	gene_name
+WBGene00012663	hex-3	hex-3	Non-protease hydrolases	a beta-N-acetylhexosaminidase	gene_name
+WBGene00021766	hex-4	hex-4	Non-protease hydrolases	a beta-N-acetylhexosaminidase	gene_name
+WBGene00013497	hex-5	hex-5	Non-protease hydrolases	a beta-N-acetylhexosaminidase	gene_name
+WBGene00016335	gba-1	gba-1	Non-protease hydrolases	homologous to the human gene encoding glucocerebrosidase	gene_name
+WBGene00016340	gba-2	gba-2	Non-protease hydrolases	homologous to the human gene encoding glucocerebrosidase	gene_name
+WBGene00008706	gba-3	gba-3	Non-protease hydrolases	homologous to the human gene encoding glucocerebrosidase	gene_name
+WBGene00021160	gba-4	gba-4	Non-protease hydrolases	homologous to the human gene encoding glucocerebrosidase	gene_name
+WBGene00004020	pho-1	pho-1	Non-protease hydrolases	acid phosphatase	gene_name
+WBGene00007328	pho-10	pho-10	Non-protease hydrolases	acid phosphatase	gene_name
+WBGene00013693	Y105E8B.9	Y105E8B.9	Non-protease hydrolases	orthologous to the human gene encoding glutathione transferase zeta 1	gene_name
+WBGene00010872	plag-15	M05B5.4	Non-protease hydrolases	phospholipase A2	sequence_name
+WBGene00019624	rnst-2	rnst-2	Non-protease hydrolases	ribonuclease	gene_name
+WBGene00010062	lipl-1	lipl-1	Non-protease hydrolases	orthologous to members of the human Lipase family	gene_name
+WBGene00009773	lipl-2	lipl-2	Non-protease hydrolases	orthologous to members of the human Lipase family	gene_name
+WBGene00020016	lipl-3	lipl-3	Non-protease hydrolases	orthologous to members of the human Lipase family	gene_name
+WBGene00019376	lipl-4	lipl-4	Non-protease hydrolases	orthologous to members of the human Lipase family	gene_name
+WBGene00022642	lipl-5	lipl-5	Non-protease hydrolases	orthologous to members of the human Lipase family	gene_name
+WBGene00021963	lipl-6	lipl-6	Non-protease hydrolases	orthologous to members of the human Lipase family	gene_name
+WBGene00008510	lipl-7	lipl-7	Non-protease hydrolases	orthologous to members of the human Lipase family	gene_name
+WBGene00013050	lipl-8	lipl-8	Non-protease hydrolases	orthologous to members of the human Lipase family	gene_name

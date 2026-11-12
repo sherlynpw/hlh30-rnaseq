@@ -1,0 +1,73 @@
+# C. elegans RNA-seq Pipeline - Default Parameters
+# Usage: nextflow run main.nf -params-file params.yaml
+
+input: samplesheet.yaml
+
+organism:
+  genome: WBcel235
+  gtf: null                # Path to Caenorhabditis_elegans.WBcel235.115.gtf
+  kegg_org: "cel"
+  org_db: "org.Ce.eg.db"
+  biomart_dataset: "celegans_gene_ensembl"
+
+deseq2:
+  padj_threshold: 0.05
+  lfc_threshold: 1.0
+  shrinkage: "apeglm"
+  condition_from: "genotype_timepoint"
+  reference: null            # e.g., "N2_L4"
+  batch: null                # Optional column name for batch correction in design formula
+
+ruvseq:
+  enabled: false           # Estimate unwanted-variation factors (W) and add to DESeq2 design
+  method: "RUVs"           # Only RUVs implemented; uses condition (or anchor_groups) as replicate groups
+  k: 1                     # Number of W factors; raise only if diagnostics show residual structure
+  anchor_groups: null      # Optional TSV (sample_id\tgroup) for explicit anchors (Plasmidsaurus-style)
+
+groups: {}
+  # Example:
+  # all:
+  #   genotype: ["N2", "hlh-30"]
+
+clustering:
+  min_pts: 5
+  num_clusters: "auto"
+  cluster_range: "2,12"
+  sort_by: "pvalue"
+  correct_vst: false  # Apply ComBat to VST counts for clustering/visualization
+
+enrichment:
+  go:
+    enabled: true
+    padj_filter: "padj"
+    padj: 0.05
+    lfc: 0
+  kegg:
+    enabled: true
+    padj_filter: "padj"
+    padj: 0.05
+    lfc: 0
+  wormcat:
+    enabled: true
+    padj_filter: "pvalue"
+    padj: 0.05
+  gsea:
+    enabled: true
+    ranking: "stat"
+    min_size: 15
+    max_size: 10000
+    collections: ["go", "kegg"]
+    hallmark_gmt: null
+    curated_gmt: null
+    custom_gene_set_file: null
+    custom_gene_set_name: "custom_gene_set"
+    custom_gene_set_format: "list"
+    custom_gene_set_map_ortholog: false
+    ortholog_map: null
+    ortholog_from: "wormbase_gene"
+    ortholog_to: "human_symbol"
+
+exploration:
+  pca_color_by: []  # Empty = color by all metadata columns in samplesheet
+
+outdir: "./results"
