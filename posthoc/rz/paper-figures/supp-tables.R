@@ -373,11 +373,32 @@ gs  <- read.delim(file.path(opt$pub, "new_autophagy", "hlh30_autophagy_genes_sum
                   stringsAsFactors = FALSE, quote = "", na.strings = "")
 lys <- read.delim(file.path(opt$pub, "new_lysosome", "sun2020_lysosome_genes.tsv"),
                   stringsAsFactors = FALSE, quote = "")
+# The figures cover only the core autophagy list and the lysosome list, so the
+# file does too. The literature search also found genes outside both lists, but
+# it did not look for them, so listing them would suggest a full search.
+core_ids <- read.delim(file.path(opt$pub, "new_autophagy", "core_autophagy_zhang_melendez2025.tsv"),
+                       stringsAsFactors = FALSE, quote = "")$gene_id
+keep_ids <- union(core_ids, lys$gene_id)
+gs <- gs[gs$gene_id %in% keep_ids, ]
+ev <- ev[ev$gene_id %in% keep_ids, ]
+# the summary leaves out genes whose only evidence is "not dependent"; add them
+extra <- setdiff(ev$gene_id, gs$gene_id)
+if (length(extra)) {
+  add <- gs[rep(NA_integer_, length(extra)), ]
+  add$gene_id <- extra
+  add$gene_name <- ev$gene_name[match(extra, ev$gene_id)]
+  add$gene_class <- ev$gene_class[match(extra, ev$gene_id)]
+  add$in_core_list <- extra %in% core_ids
+  add$n_papers_expr_reduced_hlh30 <- 0
+  add$papers_not_dependent <- sapply(extra, function(id)
+    paste(sort(unique(ev$paper[ev$gene_id == id & ev$evidence == "not_dependent"])), collapse = "; "))
+  gs <- rbind(gs, add)
+}
 EVID <- c(expr_reduced_hlh30 = "lower without hlh-30", induced_hlh30_oe = "higher with hlh-30 overexpression",
           chip_binding = "HLH-30 ChIP binding", motif_only = "promoter motif only",
           not_dependent = "not dependent on hlh-30")
-CLASS <- c(core_machinery = "core machinery", maturation_fusion = "maturation / fusion",
-           selective_autophagy = "selective autophagy", lysosome_or_other = "lysosome or other")
+CLASS <- c(core_machinery = "autophagy (core machinery)", maturation_fusion = "autophagy (maturation / fusion)",
+           selective_autophagy = "autophagy (selective)", lysosome_or_other = "lysosome")
 is_true <- function(x) x %in% c("True", "TRUE", TRUE)
 counted <- gs$n_papers_expr_reduced_hlh30 > 0
 shown <- trimws(paste(ifelse(counted & is_true(gs$in_core_list), "Fig. S7A", ""),
@@ -389,23 +410,25 @@ genes <- data.frame(gene_id = gs$gene_id, gene_name = gs$gene_name, gene_class =
                     studies_chip_binding = gs$papers_chip_binding, studies_motif_only = gs$papers_motif_only,
                     studies_not_dependent = gs$papers_not_dependent, check.names = FALSE)
 genes <- genes[order(genes$shown_in == "", -genes$n_studies_lower, genes$gene_name), ]
+stopifnot(all(genes$shown_in != "" | genes$n_studies_lower == 0))
 studies <- data.frame(gene_id = ev$gene_id, gene_name = ev$gene_name, name_in_study = ev$source_gene,
                       gene_class = CLASS[ev$gene_class], evidence = EVID[ev$evidence],
                       counted_in_figure = ifelse(ev$evidence == "expr_reduced_hlh30", "yes", "no"),
                       hlh30_perturbation = ev$hlh30_perturbation, condition = ev$condition,
                       stage_tissue = ev$stage_tissue, assay = ev$assay, result = ev$result,
-                      study = ev$paper, figure = ev$figure, pmcid = ev$pmcid, doi = ev$doi,
-                      quote = ev$quote, notes = ev$notes, check.names = FALSE)
+                      study = ev$paper, pmcid = ev$pmcid, doi = ev$doi,
+                      quote = ev$quote, check.names = FALSE)
 studies <- studies[order(studies$gene_name, studies$study, na.last = TRUE), ]
 save_book(list("Genes" = genes, "Studies" = studies), list(
   title("Supplementary File 5. Studies that link each autophagy and lysosome gene to hlh-30"),
-  text("This file lists the published studies behind the number after each gene name in Fig. S7A and S8A (column n_studies_lower).",
+  text("This file lists the published studies that support a role of HLH-30 in the expression of the genes of two lists, the core autophagy list (Table 1 of Zhang and Melendez 2025; Fig. S7A) and the lysosome list (Supplementary file 1 of Sun et al. 2020; Fig. S8A).",
+       "The studies come from a literature search for hlh-30 together with autophagy or lysosome terms.",
+       "The number of studies supporting each gene is given after the gene name in Fig. S7A and S8A (column n_studies_lower).",
        "A study counts for a gene when the gene's mRNA or transcriptional reporter was lower, or its induction was lost or reduced, in an hlh-30 mutant or after hlh-30 RNAi.",
-       "Fig. S7A shows the genes of the core autophagy list (Zhang and Melendez 2025, Table 1) with at least one counted study.",
-       "Fig. S8A shows the genes of the lysosome list (Sun et al. 2020, Supplementary file 1) with at least one counted study.",
-       "The other evidence types are listed but not counted.",
-       sprintf("The file has %d genes and %d studies, and %d genes have at least one counted study.",
-               nrow(genes), length(unique(ev$paper)), sum(counted))),
+       "The file also lists other evidence that links a gene to HLH-30 (overexpression, ChIP binding, promoter motifs and results that show no dependence on hlh-30). This evidence is not counted in the figures.",
+       sprintf("The file has %d genes from %d studies. Fig. S7A shows %d of them and Fig. S8A shows %d. The other %d genes have only other evidence.",
+               nrow(genes), length(unique(ev$paper)), sum(grepl("S7A", genes$shown_in)), sum(grepl("S8A", genes$shown_in)),
+               sum(genes$shown_in == ""))),
   heading("Sheets"),
   tab(Sheet = c("Genes", "Studies"), Rows = c(nrow(genes), nrow(studies)),
       Description = c("One row per gene", "One row per result, so a study can have several rows for one gene (such as one per condition)")),
@@ -418,8 +441,8 @@ save_book(list("Genes" = genes, "Studies" = studies), list(
                   "The study removed hlh-30 and the change in the gene was still there")),
   heading("Columns of the Genes sheet"),
   cols(gene_id = "WormBase gene ID", gene_name = "WormBase gene name",
-       gene_class = "'core machinery', 'maturation / fusion', 'selective autophagy' or 'lysosome or other'",
-       shown_in = "The figure panel that shows the gene (empty when the gene has no counted study or is not in the core autophagy or lysosome list)",
+       gene_class = "'autophagy' for a gene of the core autophagy list, with its group in that list ('core machinery', 'maturation / fusion' or 'selective'), otherwise 'lysosome'",
+       shown_in = "The figure panel that shows the gene (empty when the gene has no counted study)",
        n_studies_lower = "Number of studies in which the gene was lower without hlh-30",
        studies_lower = "The studies in which the gene was lower without hlh-30",
        studies_higher_with_overexpression = "The studies in which the gene was higher with hlh-30 overexpression",
@@ -427,16 +450,16 @@ save_book(list("Genes" = genes, "Studies" = studies), list(
        studies_motif_only = "The studies that predict a promoter motif only",
        studies_not_dependent = "The studies that found the gene does not depend on hlh-30"),
   heading("Columns of the Studies sheet"),
-  cols(gene_id = "WormBase gene ID (empty when the study's gene name matches more than one gene, such as ctsa)",
+  cols(gene_id = "WormBase gene ID",
        gene_name = "WormBase gene name", name_in_study = "The gene name as written in the study",
        gene_class = "As in the Genes sheet", evidence = "The evidence type (see Evidence types)",
        counted_in_figure = "yes for the evidence type that is counted in the figures",
        hlh30_perturbation = "How hlh-30 was changed, such as a mutant allele or RNAi",
        condition = "The condition of the experiment", stage_tissue = "The stage and tissue",
        assay = "The assay", result = "The result",
-       study = "First author, year and journal", figure = "The figure or table of the study that shows the result",
+       study = "First author, year and journal",
        pmcid = "PubMed Central ID", doi = "DOI of the study",
-       quote = "Supporting text from the study", notes = "Curation notes")),
+       quote = "Supporting text from the study, word for word")),
   "Supplementary_File_5_hlh-30_gene_evidence.xlsx")
 
 # ---- 6. SEA motif enrichment ----------------------------------------------------
