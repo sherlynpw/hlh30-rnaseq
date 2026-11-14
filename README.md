@@ -15,7 +15,7 @@ The RNA-seq data are in NCBI GEO under accession GSE354145.
 
 | Run | Samples | Used for |
 |---|---|---|
-| `VZRJXQ-ruv-rbe` | WT and *hlh-30* at L4, Day 3 and Day 6 | Fig. 1, 3A to 3D, 4, S1A, S1B and S2A to S2E |
+| `VZRJXQ-ruv-rbe` | WT and *hlh-30* at L4, Day 3 and Day 6 | Fig. 1B, 1C, 1E, 1F, 3A to 3D, 4, S1A, S1B and S2A to S2E |
 | `VZRJXQ_no_l4-ruv-rbe` | WT and *hlh-30* at Day 3 and Day 6 | Fig. 1D, 3E to 3H and S1C |
 | `hlh30-all-ruv` | WT and *hlh-30* at L1, L4, Day 3 and Day 6 | Fig. 9, S2F, S3, S5C and S7 to S11 |
 | `pca-hlh30-all-ruv` | as `hlh30-all-ruv` | Fig. 9A and 9C |

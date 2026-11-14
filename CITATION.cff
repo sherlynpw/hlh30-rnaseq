@@ -12,12 +12,15 @@ abstract: >-
 authors:
   - given-names: Ruiling
     family-names: Zhong
+    orcid: "https://orcid.org/0009-0005-0933-0000"
     affiliation: "Department of Genetics, University of Wisconsin-Madison"
   - given-names: Sherlyn P.
     family-names: Wijaya
+    orcid: "https://orcid.org/0000-0002-0323-1205"
     affiliation: "Department of Genetics, University of Wisconsin-Madison"
   - given-names: Ray A. O.
     family-names: Sinurat
+    orcid: "https://orcid.org/0000-0002-7255-7647"
     affiliation: "Department of Computer Science, University of Chicago"
   - given-names: Serenity D.
     family-names: Her
@@ -27,8 +30,9 @@ authors:
     affiliation: "Department of Genetics, University of Wisconsin-Madison"
   - given-names: Claire E.
     family-names: Richardson
+    orcid: "https://orcid.org/0000-0002-7532-1808"
     affiliation: "Department of Genetics, University of Wisconsin-Madison"
-repository-code: "https://github.com/rayandrew/hlh30-rnaseq"
+repository-code: "https://github.com/sherlynpw/hlh30-rnaseq"
 license: MIT
 version: 1.0.0
 keywords:
