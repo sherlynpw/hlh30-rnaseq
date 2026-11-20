@@ -153,7 +153,7 @@ save_book(de, list(
        sprintf("A gene is a differentially expressed gene (DEG) when padj < %g and |log2FC| >= %g.", PADJ, LFC),
        "Column 'direction' marks the DEGs, where:",
        "Up means higher in hlh-30(tm1978) than in WT, and down means lower in hlh-30(tm1978) than in WT.",
-       "Two DESeq2 models were fit, one on the 28-sample set (L4, Day 3 and Day 6) and one on the 34-sample set (L1, L4, Day 3 and Day 6), and the Sheets table gives the model of each sheet.",
+       "Two DESeq2 models were fit, one on the 28-sample set (L4, Day 3 and Day 6) and one on the 34-sample set (L1, L4, Day 3 and Day 6), and the Sheets table details the model used for each sheet.",
        "L4, Day 3 and Day 6 are in both models, so each of these stages has two sheets with slightly different DEG counts.",
        "The k-means clusters (Supplementary File 2) and the age comparisons (Supplementary File 3) use other contrasts and are not in this file."),
   heading("Sheets"),
